@@ -51,10 +51,10 @@ class DatabaseManager:
             raise ValueError("Data and metadata should be lists.")
         try:
             print("begin add data")
-            self.collection.add(documents=data, metadatas=metadata, ids=ids_list)
+            self.collection.upsert(documents=data, metadatas=metadata, ids=ids_list)
             print("Data added to the database successfully.")
-        except:
-            print("Error when add data to database")
+        except Exception as e:
+            print(f"Error when add data to database: {e}")
 
     def remove_database(self):
         """Remove the collection from the database."""
