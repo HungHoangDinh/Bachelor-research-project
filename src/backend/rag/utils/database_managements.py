@@ -26,71 +26,78 @@ class DatabaseManager:
         if not os.path.exists(self.database_dir):
             os.mkdir(self.database_dir)
             print("Database directory created successfully.")
-        print("create database")
+        else:
+            print("Database directory already exists.")
 
         return chromadb.PersistentClient(path=self.database_dir)
 
     def _get_or_create_collection(self):
         """Retrieve or create the collection with the specified name and embedding function."""
-        print("get or create collection")
-        collection = self.client.get_or_create_collection(
+       
+        try:
+            collection = self.client.get_or_create_collection(
             name=self.database_name,
             metadata={"hnsw:space": "cosine"},
             embedding_function=self.embedding_func
-        )
+            )
 
-        return collection
-
+            return collection
+        except:
+            print("Error creating or retrieving collection")
+            return None
     def add_data(self, data, metadata, ids_list):
         """Add data and corresponding metadata to the collection."""
         if not isinstance(data, list) or not isinstance(metadata, list):
             raise ValueError("Data and metadata should be lists.")
-        print("begin add data")
-
-        self.collection.add(documents=data, metadatas=metadata, ids=ids_list)
-        # batch_size = 1
-        # for i in range(0, len(data), batch_size):
-        #     batch_data = data[i:i + batch_size]
-        #     batch_metadata = metadata[i:i + batch_size]
-        #     batch_ids = id[i:i + batch_size]
-        #     self.collection.add(documents=batch_data, metadatas=batch_metadata, ids=batch_ids)
-        #     print(f"Added batch {i // batch_size + 1}")
-
-        print("Data added to the database successfully.")
+        try:
+            print("begin add data")
+            self.collection.add(documents=data, metadatas=metadata, ids=ids_list)
+            print("Data added to the database successfully.")
+        except:
+            print("Error when add data to database")
 
     def remove_database(self):
         """Remove the collection from the database."""
-        self.client.delete_collection(name=self.database_name)
-        print("Database collection removed successfully.")
+        try:
+            self.client.delete_collection(name=self.database_name)
+            print("Database collection removed successfully.")
+        except:
+            print("Error when remove database collection")
     def delete_data(self, filename):
-        self.collection.delete(where={"filename":filename})
-    def query_collection(self, questions: [str]) -> [str]:
+        try:
+            self.collection.delete(where={"filename":filename})
+        except:
+            print("Error when delete data from database")
+    def query_collection(self, questions):
         """Get data from vector database"""
-        print('Get data from vector database')
-        collection_answer = self.collection.query(
-            query_texts=questions,
-            n_results=10,
-        )
+        try:
+            print('Get data from vector database')
+            collection_answer = self.collection.query(
+                query_texts=questions,
+                n_results=10,
+            )
+            collection_documents = collection_answer['documents']
+            collection_distances = collection_answer['distances']
+            collection_id = collection_answer['ids']
+            collection_metadatas = collection_answer['metadatas']
+            documents = []
 
-        collection_documents = collection_answer['documents']
-        collection_distances = collection_answer['distances']
-        collection_id = collection_answer['ids']
-        collection_metadatas = collection_answer['metadatas']
-        documents = []
+            for i in range(len(questions)):
+                for j in range(len(collection_distances[0])):
+                    documents.append({'id': collection_id[i][j], 'document': collection_documents[i][j],
+                                    'score': collection_distances[i][j], 'metadatas': collection_metadatas[i][j]})
+            documents_sorted = sorted(documents, key=lambda x: x['score'], reverse=False)
+            unique_docs = {}
+            top_documents = []
 
-        for i in range(len(questions)):
-            for j in range(len(collection_distances[0])):
-                documents.append({'id': collection_id[i][j], 'document': collection_documents[i][j],
-                                  'score': collection_distances[i][j], 'metadatas': collection_metadatas[i][j]})
-        documents_sorted = sorted(documents, key=lambda x: x['score'], reverse=False)
-        unique_docs = {}
-        top_documents = []
-
-        for doc in documents_sorted:
-            if doc['id'] not in unique_docs:
-                unique_docs[doc['id']] = doc
-                if doc['metadatas']['raw_text'] not in top_documents:
-                    top_documents.append(doc['metadatas']['raw_text'])
-            if len(top_documents) == 20:
-                break
-        return top_documents
+            for doc in documents_sorted:
+                if doc['id'] not in unique_docs:
+                    unique_docs[doc['id']] = doc
+                    if doc['metadatas']['raw_text'] not in top_documents:
+                        top_documents.append(doc['metadatas']['raw_text'])
+                if len(top_documents) == 10:
+                    break
+            return top_documents
+        except:
+            print("Error when query collection")
+            return None
