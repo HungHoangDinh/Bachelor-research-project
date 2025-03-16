@@ -4,6 +4,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 from src.backend.rag.constants.constants import DATA_DIRECTORY
 from src.backend.rag.utils.chunking import Chunking
 from src.backend.rag.utils.database_managements import DatabaseManager
+
+
 class DataProcessing():
     def __init__(self, data_directory=DATA_DIRECTORY):
         self.data_directory = data_directory
@@ -17,12 +19,13 @@ class DataProcessing():
                 with open(file_path, "r", encoding="utf-8") as file:
                      content = file.read()
                 data, metadata, ids=self.chunking_function.chunking_documents(content,filename)
-               
+            
                 if self.database.collection:
+                    
                     self.database.add_data(data,metadata,ids)
+                    
                 else:
                     print("No collection found")
 data_processing=DataProcessing()
 data_processing.process_all_file()
-    
-            
+

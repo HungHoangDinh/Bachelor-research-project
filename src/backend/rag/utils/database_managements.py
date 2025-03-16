@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".
 import chromadb
 from chromadb.utils import embedding_functions
 from dotenv import load_dotenv
-from src.backend.rag.constants.constants import DB_DIRECTORY,DATABASE_NAME, OPENAI_EMBEDDING_MODEL
+from src.backend.rag.constants.constants import DB_DIRECTORY,DATABASE_NAME, OPENAI_EMBEDDING_MODEL,TOP_DOCUMENTS_TO_RETRIEVE
 
 class DatabaseManager:
     def __init__(self):
@@ -95,7 +95,7 @@ class DatabaseManager:
                     unique_docs[doc['id']] = doc
                     if doc['metadatas']['raw_text'] not in top_documents:
                         top_documents.append(doc['metadatas']['raw_text'])
-                if len(top_documents) == 10:
+                if len(top_documents) == TOP_DOCUMENTS_TO_RETRIEVE:
                     break
             return top_documents
         except:
