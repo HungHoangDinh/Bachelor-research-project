@@ -1,0 +1,674 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d13" for="edge" attr.name="level" attr.type="long" />
+  <key id="d12" for="edge" attr.name="human_readable_id" attr.type="long" />
+  <key id="d11" for="edge" attr.name="id" attr.type="string" />
+  <key id="d10" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="description" attr.type="string" />
+  <key id="d8" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d7" for="node" attr.name="id" attr.type="string" />
+  <key id="d6" for="node" attr.name="human_readable_id" attr.type="long" />
+  <key id="d5" for="node" attr.name="degree" attr.type="long" />
+  <key id="d4" for="node" attr.name="level" attr.type="long" />
+  <key id="d3" for="node" attr.name="cluster" attr.type="string" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T">
+      <data key="d0">TERM</data>
+      <data key="d1">R&#7889;i lo&#7841;n nh&#7883;p th&#7845;t l&#224; t&#236;nh tr&#7841;ng b&#7845;t th&#432;&#7901;ng c&#7911;a nh&#7883;p tim, x&#7843;y ra khi &#7893; ph&#225;t nh&#7883;p ngo&#7841;i lai kh&#7903;i ph&#225;t t&#7915; t&#226;m th&#7845;t, d&#7851;n &#273;&#7871;n s&#7921; co b&#243;p kh&#244;ng &#273;&#7891;ng b&#7897; c&#7911;a t&#226;m th&#7845;t. T&#236;nh tr&#7841;ng n&#224;y &#7843;nh h&#432;&#7903;ng nghi&#234;m tr&#7885;ng &#273;&#7871;n hi&#7879;u qu&#7843; b&#417;m m&#225;u c&#7911;a tim v&#224; c&#243; th&#7875; g&#226;y ra c&#225;c bi&#7871;n ch&#7913;ng nguy hi&#7875;m nh&#432; suy tim v&#224; &#273;&#7897;t t&#7917; do tim n&#7871;u kh&#244;ng &#273;&#432;&#7907;c ch&#7849;n &#273;o&#225;n v&#224; &#273;i&#7873;u tr&#7883; k&#7883;p th&#7901;i. Ng&#432;&#7901;i b&#7879;nh c&#243; th&#7875; tr&#7843;i qua c&#225;c tri&#7879;u ch&#7913;ng nghi&#234;m tr&#7885;ng, &#7843;nh h&#432;&#7903;ng &#273;&#7871;n s&#7913;c kh&#7887;e t&#7893;ng th&#7875; c&#7911;a h&#7885;.</data>
+      <data key="d2">29761ccf674424887a8b37873b591d4e,8450452994017d98ea3f4f54219b67d8,e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">35</data>
+      <data key="d6">0</data>
+      <data key="d7">059c5704d98e479088789b9a49053d89</data>
+    </node>
+    <node id="NGUY&#202;N NH&#194;N G&#194;Y R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T">
+      <data key="d0">TERM</data>
+      <data key="d1">Nguy&#234;n nh&#226;n g&#226;y r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t bao g&#7891;m t&#7893;n th&#432;&#417;ng c&#417; tim, suy tim, vi&#234;m tim, m&#7845;t c&#226;n b&#7857;ng &#273;i&#7879;n gi&#7843;i, b&#7879;nh c&#417; tim, b&#7879;nh tim b&#7849;m sinh, b&#7879;nh van tim, thi&#7871;u oxy, t&#225;c d&#7909;ng ph&#7909; c&#7911;a thu&#7889;c v&#224; t&#236;nh tr&#7841;ng sau ph&#7851;u thu&#7853;t tim.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">1</data>
+      <data key="d7">07f858eedb6d4841a75509d61edd904e</data>
+    </node>
+    <node id="NGO&#7840;I T&#194;M THU TH&#7844;T">
+      <data key="d0">TERM</data>
+      <data key="d1">Ngo&#7841;i t&#226;m thu th&#7845;t l&#224; m&#7897;t nh&#7883;p ngo&#7841;i lai kh&#7903;i ph&#225;t t&#7915; t&#226;m th&#7845;t, c&#243; th&#7875; g&#7863;p &#7903; ng&#432;&#7901;i b&#236;nh th&#432;&#7901;ng ho&#7863;c ng&#432;&#7901;i c&#243; b&#7879;nh tim c&#7845;u tr&#250;c tr&#432;&#7899;c &#273;&#243;.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">2</data>
+      <data key="d7">a362e0827b7e47acbc7222c8fa58246a</data>
+    </node>
+    <node id="NH&#7882;P NHANH TH&#7844;T">
+      <data key="d0">TERM</data>
+      <data key="d1">Nh&#7883;p nhanh th&#7845;t l&#224; c&#417;n tim nhanh do &#7893; kh&#7903;i ph&#225;t nh&#7883;p n&#7857;m t&#7841;i t&#226;m th&#7845;t, c&#243; th&#7875; g&#226;y gi&#7843;m cung l&#432;&#7907;ng tim v&#224; c&#7847;n &#273;&#432;&#7907;c ch&#259;m s&#243;c y t&#7871; k&#7883;p th&#7901;i.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">2</data>
+      <data key="d6">3</data>
+      <data key="d7">db275365018747efb7950489aa73b224</data>
+    </node>
+    <node id="RUNG TH&#7844;T">
+      <data key="d0">TERM</data>
+      <data key="d1">Rung th&#7845;t l&#224; m&#7897;t ch&#7913;ng lo&#7841;n nh&#7883;p tim &#273;e d&#7885;a t&#237;nh m&#7841;ng, c&#7847;n can thi&#7879;p y t&#7871; ngay l&#7853;p t&#7913;c &#273;&#7875; tr&#225;nh ng&#432;ng tim &#273;&#7897;t ng&#7897;t.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+      <data key="d5">3</data>
+      <data key="d6">4</data>
+      <data key="d7">0cdadc72ce0b416d8e1a98d187225937</data>
+    </node>
+    <node id="XO&#7854;N &#272;&#7880;NH">
+      <data key="d0">TERM</data>
+      <data key="d1">Xo&#7855;n &#273;&#7881;nh l&#224; m&#7897;t d&#7841;ng nh&#7883;p nhanh th&#7845;t &#273;a h&#236;nh th&#225;i c&#243; th&#7875; ti&#7871;n tri&#7875;n th&#224;nh rung th&#7845;t n&#7871;u kh&#244;ng &#273;&#432;&#7907;c &#273;i&#7873;u tr&#7883; k&#7883;p th&#7901;i.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">2</data>
+      <data key="d6">5</data>
+      <data key="d7">1c45f67137684d0f9de4b395a183008d</data>
+    </node>
+    <node id="&#272;I&#7878;N T&#194;M &#272;&#7890;">
+      <data key="d0">IT_SYSTEM</data>
+      <data key="d1">&#272;i&#7879;n t&#226;m &#273;&#7891; (&#272;I&#7878;N T&#194;M &#272;&#7890;) l&#224; m&#7897;t ph&#432;&#417;ng ph&#225;p ch&#7849;n &#273;o&#225;n quan tr&#7885;ng &#273;&#432;&#7907;c s&#7917; d&#7909;ng &#273;&#7875; ghi l&#7841;i ho&#7841;t &#273;&#7897;ng &#273;i&#7879;n c&#7911;a tim. Ph&#432;&#417;ng ph&#225;p n&#224;y gi&#250;p ph&#225;t hi&#7879;n c&#225;c r&#7889;i lo&#7841;n nh&#7883;p tim v&#224; &#273;&#225;nh gi&#225; t&#236;nh tr&#7841;ng tim m&#7841;ch c&#7911;a b&#7879;nh nh&#226;n. C&#7909; th&#7875;, &#273;i&#7879;n t&#226;m &#273;&#7891; ghi l&#7841;i c&#225;c ph&#7913;c b&#7897; QRS, t&#7915; &#273;&#243; cung c&#7845;p th&#244;ng tin c&#7847;n thi&#7871;t &#273;&#7875; x&#225;c &#273;&#7883;nh c&#225;c v&#7845;n &#273;&#7873; li&#234;n quan &#273;&#7871;n nh&#7883;p tim.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8,e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">6</data>
+      <data key="d7">9141cc8f14e44d00967f14f85d9c0d57</data>
+    </node>
+    <node id="SUY TIM">
+      <data key="d0">TERM</data>
+      <data key="d1">Suy tim l&#224; t&#236;nh tr&#7841;ng m&#224; ch&#7913;c n&#259;ng b&#417;m m&#225;u c&#7911;a tim b&#7883; suy gi&#7843;m, l&#224;m t&#259;ng nguy c&#417; xu&#7845;t hi&#7879;n c&#225;c r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">7</data>
+      <data key="d7">d76f6782416844fe8d884a76c48e6f40</data>
+    </node>
+    <node id="VI&#202;M TIM">
+      <data key="d0">TERM</data>
+      <data key="d1">Vi&#234;m tim l&#224; t&#236;nh tr&#7841;ng vi&#234;m nhi&#7877;m trong c&#417; tim, c&#243; th&#7875; g&#226;y ra c&#225;c v&#249;ng ph&#249; n&#7873; v&#224; ho&#7841;i t&#7917;, d&#7851;n &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">8</data>
+      <data key="d7">d77fa2fb815d4488bee2f537e6f34c83</data>
+    </node>
+    <node id="M&#7844;T C&#194;N B&#7856;NG &#272;I&#7878;N GI&#7842;I">
+      <data key="d0">TERM</data>
+      <data key="d1">M&#7845;t c&#226;n b&#7857;ng &#273;i&#7879;n gi&#7843;i l&#224; t&#236;nh tr&#7841;ng r&#7889;i lo&#7841;n c&#225;c ch&#7845;t &#273;i&#7879;n gi&#7843;i trong m&#225;u, &#7843;nh h&#432;&#7903;ng &#273;&#7871;n ho&#7841;t &#273;&#7897;ng &#273;i&#7879;n h&#7885;c c&#7911;a t&#7871; b&#224;o c&#417; tim, c&#243; th&#7875; g&#226;y r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">9</data>
+      <data key="d7">14b277c1e24c499db6a5a24f72e0612d</data>
+    </node>
+    <node id="B&#7878;NH C&#416; TIM">
+      <data key="d0">TERM</data>
+      <data key="d1">B&#7879;nh c&#417; tim l&#224; t&#236;nh tr&#7841;ng t&#7893;n th&#432;&#417;ng c&#417; tim l&#224;m &#7843;nh h&#432;&#7903;ng &#273;&#7871;n ch&#7913;c n&#259;ng co b&#243;p v&#224; d&#7851;n truy&#7873;n &#273;i&#7879;n h&#7885;c c&#7911;a tim, c&#243; th&#7875; d&#7851;n &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">10</data>
+      <data key="d7">510e36903f5647ad9897b743a565d47f</data>
+    </node>
+    <node id="B&#7878;NH TIM B&#7848;M SINH">
+      <data key="d0">TERM</data>
+      <data key="d1">B&#7879;nh tim b&#7849;m sinh l&#224; c&#225;c d&#7883; t&#7853;t tim xu&#7845;t hi&#7879;n t&#7915; khi sinh ra, c&#243; th&#7875; g&#226;y ra b&#7845;t th&#432;&#7901;ng trong h&#7879; th&#7889;ng d&#7851;n truy&#7873;n &#273;i&#7879;n h&#7885;c c&#7911;a tim.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">11</data>
+      <data key="d7">0a1de060f0a74eaaa6356744aa0bb7e4</data>
+    </node>
+    <node id="B&#7878;NH VAN TIM">
+      <data key="d0">TERM</data>
+      <data key="d1">B&#7879;nh van tim l&#224; t&#236;nh tr&#7841;ng h&#7865;p ho&#7863;c h&#7903; van tim, c&#243; th&#7875; l&#224;m thay &#273;&#7893;i t&#237;nh ch&#7845;t &#273;i&#7879;n h&#7885;c c&#7911;a tim v&#224; t&#7841;o &#273;i&#7873;u ki&#7879;n cho r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">12</data>
+      <data key="d7">b1308d6a9ea745c9b8004794f8792077</data>
+    </node>
+    <node id="THI&#7870;U OXY">
+      <data key="d0">TERM</data>
+      <data key="d1">Thi&#7871;u oxy l&#224; t&#236;nh tr&#7841;ng m&#224; c&#417; tim kh&#244;ng nh&#7853;n &#273;&#7911; oxy, c&#243; th&#7875; d&#7851;n &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t do &#7843;nh h&#432;&#7903;ng &#273;&#7871;n ho&#7841;t &#273;&#7897;ng &#273;i&#7879;n h&#7885;c c&#7911;a tim.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">13</data>
+      <data key="d7">8ee8cc933af84612921281aeae6ad93d</data>
+    </node>
+    <node id="T&#193;C D&#7908;NG PH&#7908; C&#7910;A THU&#7888;C">
+      <data key="d0">TERM</data>
+      <data key="d1">T&#225;c d&#7909;ng ph&#7909; c&#7911;a thu&#7889;c l&#224; nh&#7919;ng &#7843;nh h&#432;&#7903;ng kh&#244;ng mong mu&#7889;n t&#7915; vi&#7879;c s&#7917; d&#7909;ng thu&#7889;c, c&#243; th&#7875; g&#226;y r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t &#7903; b&#7879;nh nh&#226;n c&#243; y&#7871;u t&#7889; nguy c&#417;.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">14</data>
+      <data key="d7">af722ee40a6d47d698688070baa76279</data>
+    </node>
+    <node id="PH&#7850;U THU&#7852;T TIM">
+      <data key="d0">TERM</data>
+      <data key="d1">Ph&#7851;u thu&#7853;t tim l&#224; c&#225;c can thi&#7879;p ph&#7851;u thu&#7853;t v&#224;o tim, c&#243; th&#7875; &#273;&#7875; l&#7841;i v&#7871;t s&#7865;o v&#224; g&#226;y ra r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t sau ph&#7851;u thu&#7853;t.</data>
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">15</data>
+      <data key="d7">a6f8e247b7b44525a87e647f3a288292</data>
+    </node>
+    <node id="T&#7892;N TH&#431;&#416;NG C&#416; TIM">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">16</data>
+      <data key="d7">5fa447be1a354114a8d743b72523ae22</data>
+    </node>
+    <node id="THU&#7888;C CH&#7888;NG LO&#7840;N NH&#7882;P">
+      <data key="d0">TOOL</data>
+      <data key="d1">Thu&#7889;c ch&#7889;ng lo&#7841;n nh&#7883;p l&#224; lo&#7841;i thu&#7889;c &#273;&#432;&#7907;c s&#7917; d&#7909;ng &#273;&#7875; &#273;i&#7873;u tr&#7883; v&#224; ki&#7875;m so&#225;t c&#225;c c&#417;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, gi&#250;p &#7893;n &#273;&#7883;nh nh&#7883;p tim v&#224; gi&#7843;m nguy c&#417; bi&#7871;n ch&#7913;ng.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">17</data>
+      <data key="d7">38ba7dec6aa349d589f2ae79c6812e5c</data>
+    </node>
+    <node id="B&#7878;NH NH&#194;N SAU PH&#7850;U THU&#7852;T TIM">
+      <data key="d0">ROLE</data>
+      <data key="d1">B&#7879;nh nh&#226;n sau ph&#7851;u thu&#7853;t tim l&#224; nh&#7919;ng ng&#432;&#7901;i &#273;&#227; tr&#7843;i qua c&#225;c th&#7911; thu&#7853;t ph&#7851;u thu&#7853;t li&#234;n quan &#273;&#7871;n tim, c&#243; nguy c&#417; cao b&#7883; r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t do v&#7871;t s&#7865;o v&#224; t&#236;nh tr&#7841;ng vi&#234;m.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">18</data>
+      <data key="d7">608c10ce2c024a339a0b7dc93e3e59b1</data>
+    </node>
+    <node id="M&#193;Y KH&#7916; RUNG TIM NGO&#192;I T&#7920; &#272;&#7896;NG">
+      <data key="d0">TOOL</data>
+      <data key="d1">M&#225;y kh&#7917; rung tim ngo&#224;i t&#7921; &#273;&#7897;ng (AED) l&#224; thi&#7871;t b&#7883; y t&#7871; &#273;&#432;&#7907;c s&#7917; d&#7909;ng &#273;&#7875; ph&#226;n t&#237;ch nh&#7883;p tim v&#224; ph&#225;t ra xung &#273;i&#7879;n nh&#7857;m &#273;&#432;a tim tr&#7903; v&#7873; nh&#7883;p b&#236;nh th&#432;&#7901;ng trong tr&#432;&#7901;ng h&#7907;p r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">19</data>
+      <data key="d7">2c07843d7fdd46778a4cf8b354186db6</data>
+    </node>
+    <node id="H&#7890;I S&#7912;C TIM PH&#7892;I">
+      <data key="d0">ACTION</data>
+      <data key="d1">H&#7891;i s&#7913;c tim ph&#7893;i (CPR) l&#224; bi&#7879;n ph&#225;p c&#7845;p c&#7913;u quan tr&#7885;ng &#273;&#432;&#7907;c th&#7921;c hi&#7879;n ngay l&#7853;p t&#7913;c khi b&#7879;nh nh&#226;n b&#7883; ng&#7915;ng tim do r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, nh&#7857;m duy tr&#236; l&#432;u th&#244;ng m&#225;u v&#224; oxy &#273;&#7871;n c&#225;c c&#417; quan.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">20</data>
+      <data key="d7">cff76bacf9d94e45898e7cc85102d0dc</data>
+    </node>
+    <node id="X&#201;T NGHI&#7878;M M&#193;U">
+      <data key="d0">TASK</data>
+      <data key="d1">X&#233;t nghi&#7879;m m&#225;u l&#224; ph&#432;&#417;ng ph&#225;p ch&#7849;n &#273;o&#225;n gi&#250;p &#273;&#225;nh gi&#225; n&#7891;ng &#273;&#7897; c&#225;c ch&#7845;t &#273;i&#7879;n gi&#7843;i v&#224; ch&#7913;c n&#259;ng tuy&#7871;n gi&#225;p, c&#243; th&#7875; &#7843;nh h&#432;&#7903;ng &#273;&#7871;n nh&#7883;p tim c&#7911;a b&#7879;nh nh&#226;n.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">21</data>
+      <data key="d7">10b79c5cb2c5489387fecd9f6258731f</data>
+    </node>
+    <node id="TRI&#7878;T &#272;&#7888;T R&#7888;I LO&#7840;N NH&#7882;P">
+      <data key="d0">PROCEDURE</data>
+      <data key="d1">Tri&#7879;t &#273;&#7889;t r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t b&#7857;ng catheter l&#224; ph&#432;&#417;ng ph&#225;p &#273;i&#7873;u tr&#7883; can thi&#7879;p s&#7917; d&#7909;ng n&#259;ng l&#432;&#7907;ng t&#7847;n s&#7889; radio &#273;&#7875; c&#244; l&#7853;p c&#225;c v&#249;ng m&#244; tim g&#226;y ra r&#7889;i lo&#7841;n nh&#7883;p, c&#243; t&#7927; l&#7879; th&#224;nh c&#244;ng cao.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">22</data>
+      <data key="d7">651a77724f554598855f5b0ddeb834ba</data>
+    </node>
+    <node id="C&#7844;Y M&#193;Y PH&#193; RUNG T&#7920; &#272;&#7896;NG">
+      <data key="d0">PROCEDURE</data>
+      <data key="d1">C&#7845;y m&#225;y ph&#225; rung t&#7921; &#273;&#7897;ng (ICD) l&#224; th&#7911; thu&#7853;t c&#7845;y m&#7897;t thi&#7871;t b&#7883; nh&#7887; d&#432;&#7899;i da &#273;&#7875; theo d&#245;i nh&#7883;p tim v&#224; t&#7921; &#273;&#7897;ng ph&#225;t xung &#273;i&#7879;n khi ph&#225;t hi&#7879;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t nguy hi&#7875;m.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">23</data>
+      <data key="d7">d6eb0cd3b1c64bedb8de823d650a54e0</data>
+    </node>
+    <node id="TRI&#7878;U CH&#7912;NG R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T">
+      <data key="d0">TERM</data>
+      <data key="d1">Tri&#7879;u ch&#7913;ng r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t l&#224; c&#225;c bi&#7875;u hi&#7879;n l&#226;m s&#224;ng m&#224; b&#7879;nh nh&#226;n c&#243; th&#7875; g&#7863;p ph&#7843;i, bao g&#7891;m nh&#7883;p nhanh th&#7845;t ho&#7863;c rung th&#7845;t, c&#243; th&#7875; xu&#7845;t hi&#7879;n &#273;&#7897;t ng&#7897;t v&#224; n&#7863;ng h&#417;n nhanh ch&#243;ng.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">24</data>
+      <data key="d7">b81a8502e4c748639cdbe14d53e04f4f</data>
+    </node>
+    <node id="TH&#258;M KH&#193;M L&#194;M S&#192;NG">
+      <data key="d0">ACTION</data>
+      <data key="d1">Th&#259;m kh&#225;m l&#226;m s&#224;ng l&#224; qu&#225; tr&#236;nh b&#225;c s&#297; ki&#7875;m tra v&#224; &#273;&#225;nh gi&#225; t&#236;nh tr&#7841;ng s&#7913;c kh&#7887;e c&#7911;a b&#7879;nh nh&#226;n, bao g&#7891;m khai th&#225;c ti&#7873;n s&#7917; b&#7879;nh v&#224; c&#225;c tri&#7879;u ch&#7913;ng li&#234;n quan &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">25</data>
+      <data key="d7">5653aa59db2147a99be3595e7a7e5a7a</data>
+    </node>
+    <node id="C&#193;C BI&#7870;N CH&#7912;NG NGHI&#202;M TR&#7884;NG">
+      <data key="d0">TERM</data>
+      <data key="d1">C&#225;c bi&#7871;n ch&#7913;ng nghi&#234;m tr&#7885;ng l&#224; nh&#7919;ng t&#236;nh tr&#7841;ng ph&#225;t sinh t&#7915; r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, c&#243; th&#7875; bao g&#7891;m suy tim, &#273;&#7897;t qu&#7925; v&#224; thay &#273;&#7893;i c&#7845;u tr&#250;c tim kh&#244;ng h&#7891;i ph&#7909;c.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">26</data>
+      <data key="d7">f91c6b7f0ebb4847ace8183ea6780dc7</data>
+    </node>
+    <node id="C&#193;C PH&#431;&#416;NG PH&#193;P C&#7852;N L&#194;M S&#192;NG">
+      <data key="d0">CHECKLIST</data>
+      <data key="d1">C&#225;c ph&#432;&#417;ng ph&#225;p c&#7853;n l&#226;m s&#224;ng l&#224; nh&#7919;ng x&#233;t nghi&#7879;m v&#224; k&#7929; thu&#7853;t b&#7893; sung &#273;&#432;&#7907;c s&#7917; d&#7909;ng &#273;&#7875; h&#7895; tr&#7907; ch&#7849;n &#273;o&#225;n v&#224; t&#236;m nguy&#234;n nh&#226;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, bao g&#7891;m &#273;i&#7879;n t&#226;m &#273;&#7891; v&#224; x&#233;t nghi&#7879;m m&#225;u.</data>
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">27</data>
+      <data key="d7">de507a6bf6e24d9e9aa30d2d6b591601</data>
+    </node>
+    <node id="Y&#7870;U T&#7888; NGUY C&#416;">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">28</data>
+      <data key="d7">21b6d606f2044a23a1f660c2b1eb2527</data>
+    </node>
+    <node id="TRUNG T&#194;M TIM M&#7840;CH">
+      <data key="d0">ORGANIZATION</data>
+      <data key="d1">Trung t&#226;m Tim m&#7841;ch l&#224; c&#417; s&#7903; y t&#7871; chuy&#234;n v&#7873; ch&#7849;n &#273;o&#225;n v&#224; &#273;i&#7873;u tr&#7883; c&#225;c b&#7879;nh l&#253; li&#234;n quan &#273;&#7871;n tim m&#7841;ch, bao g&#7891;m r&#7889;i lo&#7841;n nh&#7883;p tim.</data>
+      <data key="d2">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">29</data>
+      <data key="d7">82c9e2c767de474580fb9410cf51d31d</data>
+    </node>
+    <node id="B&#7878;NH VI&#7878;N &#272;A KHOA T&#194;M ANH">
+      <data key="d0">ORGANIZATION</data>
+      <data key="d1">B&#7879;nh vi&#7879;n &#272;a khoa T&#226;m Anh l&#224; m&#7897;t b&#7879;nh vi&#7879;n cung c&#7845;p d&#7883;ch v&#7909; y t&#7871; &#273;a d&#7841;ng, trong &#273;&#243; c&#243; chuy&#234;n khoa tim m&#7841;ch, ph&#7909;c v&#7909; cho vi&#7879;c th&#259;m kh&#225;m v&#224; &#273;i&#7873;u tr&#7883; c&#225;c b&#7879;nh l&#253; tim m&#7841;ch.</data>
+      <data key="d2">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">30</data>
+      <data key="d7">3c9ee757513b46808792546c7b32cfa2</data>
+    </node>
+    <node id="C&#193;C TRI&#7878;U CH&#7912;NG NGHI&#202;M TR&#7884;NG">
+      <data key="d0">TERMINOLOGY</data>
+      <data key="d1">C&#225;c tri&#7879;u ch&#7913;ng nghi&#234;m tr&#7885;ng li&#234;n quan &#273;&#7871;n lo&#7841;n nh&#7883;p th&#7845;t bao g&#7891;m nh&#7883;p tim nhanh b&#7845;t th&#432;&#7901;ng, &#273;au th&#7855;t ng&#7921;c, h&#7909;t h&#417;i, ng&#7845;t x&#7881;u ho&#7863;c g&#7847;n ng&#7845;t x&#7881;u.</data>
+      <data key="d2">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">31</data>
+      <data key="d7">9366ad34390b47219e722d3690d97901</data>
+    </node>
+    <node id="&#272;I&#7872;U TR&#7882; V&#192; KI&#7874;M SO&#193;T LO&#7840;N NH&#7882;P">
+      <data key="d0">PROCEDURE</data>
+      <data key="d1">&#272;i&#7873;u tr&#7883; v&#224; ki&#7875;m so&#225;t lo&#7841;n nh&#7883;p l&#224; quy tr&#236;nh nh&#7857;m n&#226;ng cao ch&#7845;t l&#432;&#7907;ng &#273;&#7901;i s&#7889;ng cho ng&#432;&#7901;i b&#7879;nh, t&#249;y thu&#7897;c v&#224;o nguy&#234;n nh&#226;n g&#226;y ra r&#7889;i lo&#7841;n nh&#7883;p.</data>
+      <data key="d2">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">32</data>
+      <data key="d7">d94aa0df83f3437bbb108eeaa822b218</data>
+    </node>
+    <node id="NGUY&#202;N NH&#194;N G&#194;Y B&#7878;NH">
+      <data key="d0">TERM</data>
+      <data key="d1">Nguy&#234;n nh&#226;n g&#226;y b&#7879;nh l&#224; c&#225;c y&#7871;u t&#7889; c&#243; th&#7875; d&#7851;n &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, bao g&#7891;m t&#236;nh tr&#7841;ng m&#227;n t&#237;nh ti&#7873;m &#7849;n ho&#7863;c b&#7879;nh l&#253; b&#7849;m sinh.</data>
+      <data key="d2">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">33</data>
+      <data key="d7">a7e539999e284f76b6c8ff4743a27cd7</data>
+    </node>
+    <node id="M&#7908;C TI&#202;U &#272;I&#7872;U TR&#7882;">
+      <data key="d0">TERM</data>
+      <data key="d1">M&#7909;c ti&#234;u &#273;i&#7873;u tr&#7883; l&#224; vi&#7879;c ki&#7875;m so&#225;t v&#224; &#273;i&#7873;u tr&#7883; r&#7889;i lo&#7841;n nh&#7883;p nh&#7857;m n&#226;ng cao ch&#7845;t l&#432;&#7907;ng &#273;&#7901;i s&#7889;ng cho ng&#432;&#7901;i b&#7879;nh.</data>
+      <data key="d2">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">34</data>
+      <data key="d7">133c802ececc45148acf2d94b22f1db0</data>
+    </node>
+    <node id="C&#193;C C&#193;CH GI&#7842;M NGUY C&#416;">
+      <data key="d0" />
+      <data key="d1" />
+      <data key="d2">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+      <data key="d5">1</data>
+      <data key="d6">35</data>
+      <data key="d7">74fe152802764ee2a0fceff098d73700</data>
+    </node>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="NGUY&#202;N NH&#194;N G&#194;Y R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T">
+      <data key="d8">9.0</data>
+      <data key="d9">R&#7889;i lo&#7841;n nh&#7883;p th&#7845;t x&#7843;y ra do nhi&#7873;u nguy&#234;n nh&#226;n kh&#225;c nhau, bao g&#7891;m t&#7893;n th&#432;&#417;ng c&#417; tim, suy tim v&#224; c&#225;c y&#7871;u t&#7889; kh&#225;c.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">10b602aa379b41ceab9257799fe96ca4</data>
+      <data key="d12">0</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="NGO&#7840;I T&#194;M THU TH&#7844;T">
+      <data key="d8">8.0</data>
+      <data key="d9">Ngo&#7841;i t&#226;m thu th&#7845;t l&#224; m&#7897;t trong nh&#7919;ng d&#7841;ng r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t th&#432;&#7901;ng g&#7863;p, c&#243; th&#7875; d&#7851;n &#273;&#7871;n c&#225;c bi&#7871;n ch&#7913;ng nghi&#234;m tr&#7885;ng.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">7dd1ab9a3a3a4c7aa721133b6dde1a02</data>
+      <data key="d12">1</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="NH&#7882;P NHANH TH&#7844;T">
+      <data key="d8">8.0</data>
+      <data key="d9">Nh&#7883;p nhanh th&#7845;t l&#224; m&#7897;t d&#7841;ng r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t c&#243; th&#7875; g&#226;y ra t&#236;nh tr&#7841;ng nguy hi&#7875;m cho b&#7879;nh nh&#226;n.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">a030f9ae5bc84b3f8bd69eee8da16aaa</data>
+      <data key="d12">2</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="RUNG TH&#7844;T">
+      <data key="d8">9.0</data>
+      <data key="d9">Rung th&#7845;t l&#224; m&#7897;t c&#7845;p c&#7913;u tim m&#7841;ch nghi&#234;m tr&#7885;ng li&#234;n quan &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, c&#7847;n can thi&#7879;p y t&#7871; ngay l&#7853;p t&#7913;c.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">f0d28b34a6b3411eb696f3ebfa86d851</data>
+      <data key="d12">3</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="XO&#7854;N &#272;&#7880;NH">
+      <data key="d8">8.0</data>
+      <data key="d9">Xo&#7855;n &#273;&#7881;nh c&#243; th&#7875; ti&#7871;n tri&#7875;n th&#224;nh rung th&#7845;t, l&#224; m&#7897;t d&#7841;ng r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t c&#7847;n &#273;&#432;&#7907;c theo d&#245;i v&#224; &#273;i&#7873;u tr&#7883;.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">e277950d4bbf42ffb8d5d66cf3c23e04</data>
+      <data key="d12">4</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="T&#7892;N TH&#431;&#416;NG C&#416; TIM">
+      <data key="d8">9.0</data>
+      <data key="d9">T&#7893;n th&#432;&#417;ng c&#417; tim sau nh&#7891;i m&#225;u c&#243; th&#7875; t&#7841;o ra c&#225;c &#7893; ph&#225;t sinh r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t nguy hi&#7875;m.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">58c81cb96adc46ffad4f5c09dc7a237e</data>
+      <data key="d12">5</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="SUY TIM">
+      <data key="d8">8.0</data>
+      <data key="d9">Suy tim l&#224;m t&#259;ng nguy c&#417; xu&#7845;t hi&#7879;n c&#225;c r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, &#273;&#7863;c bi&#7879;t &#7903; nh&#7919;ng b&#7879;nh nh&#226;n suy tim n&#7863;ng.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">cccc92fa839e49c783ad53646c5ec67d</data>
+      <data key="d12">6</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="VI&#202;M TIM">
+      <data key="d8">8.0</data>
+      <data key="d9">Vi&#234;m tim c&#243; th&#7875; t&#7841;o ra c&#225;c t&#7893;n th&#432;&#417;ng trong c&#417; tim, d&#7851;n &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">4d60e1b558734736b646b7096fb1218f</data>
+      <data key="d12">7</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="M&#7844;T C&#194;N B&#7856;NG &#272;I&#7878;N GI&#7842;I">
+      <data key="d8">8.0</data>
+      <data key="d9">M&#7845;t c&#226;n b&#7857;ng &#273;i&#7879;n gi&#7843;i c&#243; th&#7875; &#7843;nh h&#432;&#7903;ng &#273;&#7871;n ho&#7841;t &#273;&#7897;ng &#273;i&#7879;n h&#7885;c c&#7911;a tim, d&#7851;n &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">2c7f4b5da8224ba3b20c3c1a4190dc23</data>
+      <data key="d12">8</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="B&#7878;NH C&#416; TIM">
+      <data key="d8">8.0</data>
+      <data key="d9">B&#7879;nh c&#417; tim c&#243; th&#7875; l&#224;m t&#259;ng nguy c&#417; r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t do &#7843;nh h&#432;&#7903;ng &#273;&#7871;n ch&#7913;c n&#259;ng d&#7851;n truy&#7873;n &#273;i&#7879;n c&#7911;a tim.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">1c0673f3967845d2adf50e9bcf203a74</data>
+      <data key="d12">9</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="B&#7878;NH TIM B&#7848;M SINH">
+      <data key="d8">8.0</data>
+      <data key="d9">B&#7879;nh tim b&#7849;m sinh c&#243; th&#7875; g&#226;y ra b&#7845;t th&#432;&#7901;ng trong h&#7879; th&#7889;ng d&#7851;n truy&#7873;n &#273;i&#7879;n h&#7885;c c&#7911;a tim, d&#7851;n &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">4d35abe822d64ec0ba167fb49bc26592</data>
+      <data key="d12">10</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="B&#7878;NH VAN TIM">
+      <data key="d8">8.0</data>
+      <data key="d9">B&#7879;nh van tim c&#243; th&#7875; l&#224;m thay &#273;&#7893;i t&#237;nh ch&#7845;t &#273;i&#7879;n h&#7885;c c&#7911;a tim, t&#7841;o &#273;i&#7873;u ki&#7879;n cho r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">8afa37a8097e46b380b8cd38a607da87</data>
+      <data key="d12">11</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="THI&#7870;U OXY">
+      <data key="d8">9.0</data>
+      <data key="d9">Thi&#7871;u oxy c&#243; th&#7875; d&#7851;n &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t do &#7843;nh h&#432;&#7903;ng &#273;&#7871;n ho&#7841;t &#273;&#7897;ng &#273;i&#7879;n h&#7885;c c&#7911;a t&#7871; b&#224;o c&#417; tim.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">d5207287722f4472aae1e228f00334a6</data>
+      <data key="d12">12</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="T&#193;C D&#7908;NG PH&#7908; C&#7910;A THU&#7888;C">
+      <data key="d8">8.0</data>
+      <data key="d9">M&#7897;t s&#7889; lo&#7841;i thu&#7889;c c&#243; th&#7875; g&#226;y ra r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t nh&#432; t&#225;c d&#7909;ng ph&#7909;, &#273;&#7863;c bi&#7879;t &#7903; b&#7879;nh nh&#226;n c&#243; y&#7871;u t&#7889; nguy c&#417;.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">efc335621de5410f8bfa8f7de5eb2c74</data>
+      <data key="d12">13</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="PH&#7850;U THU&#7852;T TIM">
+      <data key="d8">1.0</data>
+      <data key="d9">Ph&#7851;u thu&#7853;t tim c&#243; th&#7875; &#273;&#7875; l&#7841;i v&#7871;t s&#7865;o v&#224; g&#226;y ra r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t sau ph&#7851;u thu&#7853;t.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">d9c703da7e8241e4a53a2bec038a9a29</data>
+      <data key="d12">14</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="THU&#7888;C CH&#7888;NG LO&#7840;N NH&#7882;P">
+      <data key="d8">9.0</data>
+      <data key="d9">Thu&#7889;c ch&#7889;ng lo&#7841;n nh&#7883;p &#273;&#432;&#7907;c s&#7917; d&#7909;ng &#273;&#7875; &#273;i&#7873;u tr&#7883; v&#224; ki&#7875;m so&#225;t c&#225;c c&#417;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, gi&#250;p &#7893;n &#273;&#7883;nh nh&#7883;p tim.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">93c4d33976c8437e9ad30233a59737a9</data>
+      <data key="d12">15</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="B&#7878;NH NH&#194;N SAU PH&#7850;U THU&#7852;T TIM">
+      <data key="d8">8.0</data>
+      <data key="d9">B&#7879;nh nh&#226;n sau ph&#7851;u thu&#7853;t tim c&#243; nguy c&#417; cao b&#7883; r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t do v&#7871;t s&#7865;o v&#224; t&#236;nh tr&#7841;ng vi&#234;m trong c&#417; tim.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">b85fb2110da44ea0960df9e334674460</data>
+      <data key="d12">16</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="&#272;I&#7878;N T&#194;M &#272;&#7890;">
+      <data key="d8">9.0</data>
+      <data key="d9">&#272;i&#7879;n t&#226;m &#273;&#7891; l&#224; ph&#432;&#417;ng ph&#225;p ch&#7849;n &#273;o&#225;n gi&#250;p ph&#225;t hi&#7879;n c&#225;c r&#7889;i lo&#7841;n nh&#7883;p tim, bao g&#7891;m r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">bd0d6934a1934356b05f4117f0e62d96</data>
+      <data key="d12">17</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="M&#193;Y KH&#7916; RUNG TIM NGO&#192;I T&#7920; &#272;&#7896;NG">
+      <data key="d8">9.0</data>
+      <data key="d9">M&#225;y kh&#7917; rung tim ngo&#224;i t&#7921; &#273;&#7897;ng &#273;&#432;&#7907;c s&#7917; d&#7909;ng &#273;&#7875; &#273;i&#7873;u tr&#7883; r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t b&#7857;ng c&#225;ch ph&#225;t ra xung &#273;i&#7879;n nh&#7857;m &#273;&#432;a tim v&#7873; nh&#7883;p b&#236;nh th&#432;&#7901;ng.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">1e41fb985e864ac4a5a0ed61cc0fa749</data>
+      <data key="d12">18</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="H&#7890;I S&#7912;C TIM PH&#7892;I">
+      <data key="d8">9.0</data>
+      <data key="d9">H&#7891;i s&#7913;c tim ph&#7893;i l&#224; bi&#7879;n ph&#225;p c&#7845;p c&#7913;u c&#7847;n thi&#7871;t khi b&#7879;nh nh&#226;n b&#7883; ng&#7915;ng tim do r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">6302f294f574480fbb935d290bec85cf</data>
+      <data key="d12">19</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="X&#201;T NGHI&#7878;M M&#193;U">
+      <data key="d8">8.0</data>
+      <data key="d9">X&#233;t nghi&#7879;m m&#225;u gi&#250;p &#273;&#225;nh gi&#225; c&#225;c y&#7871;u t&#7889; c&#243; th&#7875; &#7843;nh h&#432;&#7903;ng &#273;&#7871;n nh&#7883;p tim, t&#7915; &#273;&#243; h&#7895; tr&#7907; ch&#7849;n &#273;o&#225;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">cce9b134cf7748d9a95ffcc55bf6edb7</data>
+      <data key="d12">20</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="TRI&#7878;T &#272;&#7888;T R&#7888;I LO&#7840;N NH&#7882;P">
+      <data key="d8">9.0</data>
+      <data key="d9">Tri&#7879;t &#273;&#7889;t r&#7889;i lo&#7841;n nh&#7883;p l&#224; ph&#432;&#417;ng ph&#225;p &#273;i&#7873;u tr&#7883; can thi&#7879;p hi&#7879;u qu&#7843; cho c&#225;c tr&#432;&#7901;ng h&#7907;p r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">247ff19a8e454f5d937955f4ffa85e87</data>
+      <data key="d12">21</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="C&#7844;Y M&#193;Y PH&#193; RUNG T&#7920; &#272;&#7896;NG">
+      <data key="d8">1.0</data>
+      <data key="d9">C&#7845;y m&#225;y ph&#225; rung t&#7921; &#273;&#7897;ng l&#224; bi&#7879;n ph&#225;p theo d&#245;i v&#224; &#273;i&#7873;u tr&#7883; r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t nguy hi&#7875;m.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">6cd2bb04860a4af6b3ea5ea657d6bb60</data>
+      <data key="d12">22</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="Y&#7870;U T&#7888; NGUY C&#416;">
+      <data key="d8">8.0</data>
+      <data key="d9">Y&#7871;u t&#7889; nguy c&#417; c&#243; th&#7875; l&#224;m t&#259;ng kh&#7843; n&#259;ng x&#7843;y ra r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t &#7903; b&#7879;nh nh&#226;n, d&#7851;n &#273;&#7871;n c&#225;c bi&#7871;n ch&#7913;ng nghi&#234;m tr&#7885;ng.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">80aaca8a3ecf4a1c92ce9272c78b2de9</data>
+      <data key="d12">23</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="TRI&#7878;U CH&#7912;NG R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T">
+      <data key="d8">9.0</data>
+      <data key="d9">Tri&#7879;u ch&#7913;ng r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t l&#224; c&#225;c bi&#7875;u hi&#7879;n m&#224; b&#7879;nh nh&#226;n c&#243; th&#7875; g&#7863;p ph&#7843;i khi m&#7855;c ph&#7843;i t&#236;nh tr&#7841;ng n&#224;y, &#7843;nh h&#432;&#7903;ng &#273;&#7871;n ch&#7845;t l&#432;&#7907;ng cu&#7897;c s&#7889;ng.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">34df90fae8134b20a9fd33bd7f77ddc7</data>
+      <data key="d12">24</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="TH&#258;M KH&#193;M L&#194;M S&#192;NG">
+      <data key="d8">8.0</data>
+      <data key="d9">Th&#259;m kh&#225;m l&#226;m s&#224;ng l&#224; b&#432;&#7899;c &#273;&#7847;u ti&#234;n trong qu&#225; tr&#236;nh ch&#7849;n &#273;o&#225;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, gi&#250;p b&#225;c s&#297; x&#225;c &#273;&#7883;nh t&#236;nh tr&#7841;ng b&#7879;nh nh&#226;n.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">ef895d7d1b93451bbf9503536a834adc</data>
+      <data key="d12">25</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="C&#193;C BI&#7870;N CH&#7912;NG NGHI&#202;M TR&#7884;NG">
+      <data key="d8">9.0</data>
+      <data key="d9">C&#225;c bi&#7871;n ch&#7913;ng nghi&#234;m tr&#7885;ng c&#243; th&#7875; x&#7843;y ra n&#7871;u r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t kh&#244;ng &#273;&#432;&#7907;c &#273;i&#7873;u tr&#7883; k&#7883;p th&#7901;i v&#224; &#273;&#250;ng c&#225;ch.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">23b8bea2a4e545fc828f274adb818312</data>
+      <data key="d12">26</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="C&#193;C PH&#431;&#416;NG PH&#193;P C&#7852;N L&#194;M S&#192;NG">
+      <data key="d8">1.0</data>
+      <data key="d9">C&#225;c ph&#432;&#417;ng ph&#225;p c&#7853;n l&#226;m s&#224;ng &#273;&#432;&#7907;c s&#7917; d&#7909;ng &#273;&#7875; h&#7895; tr&#7907; ch&#7849;n &#273;o&#225;n v&#224; t&#236;m nguy&#234;n nh&#226;n c&#7911;a r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">e8614181c1c96a52140d67b12b26678f</data>
+      <data key="d11">d88facf2c06045468f021f3a06802a74</data>
+      <data key="d12">27</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="TRUNG T&#194;M TIM M&#7840;CH">
+      <data key="d8">9.0</data>
+      <data key="d9">Trung t&#226;m Tim m&#7841;ch chuy&#234;n &#273;i&#7873;u tr&#7883; c&#225;c b&#7879;nh l&#253; li&#234;n quan &#273;&#7871;n r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t, cung c&#7845;p d&#7883;ch v&#7909; y t&#7871; cho ng&#432;&#7901;i b&#7879;nh.</data>
+      <data key="d10">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d11">f2842801ea0348eaaeaebfe037b4861b</data>
+      <data key="d12">28</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="B&#7878;NH VI&#7878;N &#272;A KHOA T&#194;M ANH">
+      <data key="d8">9.0</data>
+      <data key="d9">B&#7879;nh vi&#7879;n &#272;a khoa T&#226;m Anh c&#243; chuy&#234;n khoa tim m&#7841;ch, n&#417;i ng&#432;&#7901;i b&#7879;nh c&#243; th&#7875; &#273;&#432;&#7907;c th&#259;m kh&#225;m v&#224; &#273;i&#7873;u tr&#7883; r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d11">2b162e1f80554871be2dece37b2e9081</data>
+      <data key="d12">29</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="C&#193;C TRI&#7878;U CH&#7912;NG NGHI&#202;M TR&#7884;NG">
+      <data key="d8">8.0</data>
+      <data key="d9">C&#225;c tri&#7879;u ch&#7913;ng nghi&#234;m tr&#7885;ng l&#224; d&#7845;u hi&#7879;u cho th&#7845;y ng&#432;&#7901;i b&#7879;nh c&#243; th&#7875; &#273;ang g&#7863;p ph&#7843;i r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t v&#224; c&#7847;n &#273;&#432;&#7907;c h&#7895; tr&#7907; y t&#7871;.</data>
+      <data key="d10">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d11">11d2c86942b2494898a8f158d96d9098</data>
+      <data key="d12">30</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="&#272;I&#7872;U TR&#7882; V&#192; KI&#7874;M SO&#193;T LO&#7840;N NH&#7882;P">
+      <data key="d8">1.0</data>
+      <data key="d9">&#272;i&#7873;u tr&#7883; v&#224; ki&#7875;m so&#225;t lo&#7841;n nh&#7883;p l&#224; m&#7909;c ti&#234;u ch&#237;nh trong vi&#7879;c qu&#7843;n l&#253; r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t &#273;&#7875; n&#226;ng cao ch&#7845;t l&#432;&#7907;ng s&#7889;ng cho ng&#432;&#7901;i b&#7879;nh.</data>
+      <data key="d10">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d11">eab2bccd70c247fca36e9a03bf72422b</data>
+      <data key="d12">31</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="C&#193;C C&#193;CH GI&#7842;M NGUY C&#416;">
+      <data key="d8">7.0</data>
+      <data key="d9">C&#225;c c&#225;ch gi&#7843;m nguy c&#417; c&#243; th&#7875; gi&#250;p ng&#432;&#7901;i b&#7879;nh ki&#7875;m so&#225;t t&#236;nh tr&#7841;ng r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t v&#224; c&#7843;i thi&#7879;n s&#7913;c kh&#7887;e tim m&#7841;ch.</data>
+      <data key="d10">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d11">ef190d5890f24b8bb6d1b7fc0eacafc3</data>
+      <data key="d12">32</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="NGUY&#202;N NH&#194;N G&#194;Y B&#7878;NH">
+      <data key="d8">8.0</data>
+      <data key="d9">Nguy&#234;n nh&#226;n g&#226;y b&#7879;nh c&#243; th&#7875; l&#224; y&#7871;u t&#7889; di truy&#7873;n ho&#7863;c t&#236;nh tr&#7841;ng m&#227;n t&#237;nh, &#7843;nh h&#432;&#7903;ng &#273;&#7871;n s&#7921; ph&#225;t tri&#7875;n c&#7911;a r&#7889;i lo&#7841;n nh&#7883;p th&#7845;t.</data>
+      <data key="d10">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d11">7a1536d4b9dc4358a7228f7622024377</data>
+      <data key="d12">33</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="R&#7888;I LO&#7840;N NH&#7882;P TH&#7844;T" target="M&#7908;C TI&#202;U &#272;I&#7872;U TR&#7882;">
+      <data key="d8">1.0</data>
+      <data key="d9">M&#7909;c ti&#234;u &#273;i&#7873;u tr&#7883; li&#234;n quan &#273;&#7871;n vi&#7879;c ki&#7875;m so&#225;t v&#224; &#273;i&#7873;u tr&#7883; r&#7889;i lo&#7841;n nh&#7883;p &#273;&#7875; n&#226;ng cao ch&#7845;t l&#432;&#7907;ng s&#7889;ng cho ng&#432;&#7901;i b&#7879;nh.</data>
+      <data key="d10">29761ccf674424887a8b37873b591d4e</data>
+      <data key="d11">96ffca9c6d0d433593b8c2692a37a48c</data>
+      <data key="d12">34</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="NH&#7882;P NHANH TH&#7844;T" target="RUNG TH&#7844;T">
+      <data key="d8">9.0</data>
+      <data key="d9">Nh&#7883;p nhanh th&#7845;t n&#7871;u kh&#244;ng &#273;&#432;&#7907;c &#273;i&#7873;u tr&#7883; c&#243; th&#7875; d&#7851;n &#273;&#7871;n rung th&#7845;t, g&#226;y nguy hi&#7875;m cho t&#237;nh m&#7841;ng.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">5cbbd425f3fb4ba6bed9b34dc106df8a</data>
+      <data key="d12">35</data>
+      <data key="d13">0</data>
+    </edge>
+    <edge source="RUNG TH&#7844;T" target="XO&#7854;N &#272;&#7880;NH">
+      <data key="d8">1.0</data>
+      <data key="d9">Xo&#7855;n &#273;&#7881;nh c&#243; th&#7875; ti&#7871;n tri&#7875;n th&#224;nh rung th&#7845;t n&#7871;u kh&#244;ng &#273;&#432;&#7907;c can thi&#7879;p k&#7883;p th&#7901;i.</data>
+      <data key="d10">8450452994017d98ea3f4f54219b67d8</data>
+      <data key="d11">c3a4cd7efc484b078ec9a31ca2089772</data>
+      <data key="d12">36</data>
+      <data key="d13">0</data>
+    </edge>
+  </graph>
+</graphml>

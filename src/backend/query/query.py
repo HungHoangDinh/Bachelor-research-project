@@ -1,7 +1,6 @@
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..","..")))
-import asyncio
 from src.backend.query.gpt_call.gpt_call_function import GPT_Calling_Functions
 from  src.backend.rag.utils.database_managements import DatabaseManager
 class Query:

@@ -2,3 +2,4 @@ chromadb
 langchain_text_splitters
 openai
 tiktoken
+graphrag==0.3.6
