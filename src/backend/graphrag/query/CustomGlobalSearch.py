@@ -109,10 +109,7 @@ class CustomGlobalSearch(GlobalSearch):
                         "score": element["score"],
                     })
 
-            with open("D:/Important/chatbot_tts/src/logs/global/key_points.txt", "w", encoding="utf-8") as file:
-                file.write(str(key_points))
-                file.write("\n\n")
-
+           
             # filter response with score = 0 and rank responses by descending order of score
             filtered_key_points = [
                 point
@@ -186,9 +183,7 @@ class CustomGlobalSearch(GlobalSearch):
                 reverse=True,  # type: ignore
             )
 
-            with open("D:/Important/chatbot_tts/src/logs/global/filtered_key_points.txt", "w", encoding="utf-8") as file:
-                file.write(str(filtered_key_points))
-                file.write("\n\n")
+           
 
             data = []
             total_tokens = 0
@@ -211,9 +206,7 @@ class CustomGlobalSearch(GlobalSearch):
                 data.append(formatted_response_text)
                 total_tokens += num_tokens(formatted_response_text, self.token_encoder)
             text_data = "\n\n".join(data)
-            with open("D:/Important/chatbot_tts/src/logs/global/text_data.txt", "w", encoding="utf-8") as file:
-                file.write(text_data)
-                file.write("\n\n")
+         
 
             search_prompt = self.reduce_system_prompt.format(
                 report_data=text_data, response_type=self.response_type
@@ -221,9 +214,7 @@ class CustomGlobalSearch(GlobalSearch):
             if self.allow_general_knowledge:
                 search_prompt += "\n" + self.general_knowledge_inclusion_prompt
 
-            with open("D:/Important/chatbot_tts/src/logs/global/search_prompt.txt", "w", encoding="utf-8") as file:
-                file.write(search_prompt)
-                file.write("\n\n")
+           
             search_messages = [
                 {"role": "system", "content": search_prompt},
                 {"role": "user", "content": query},
@@ -274,20 +265,6 @@ class CustomGlobalSearch(GlobalSearch):
         context_chunks, context_records = self.context_builder.build_context(
             conversation_history=conversation_history, **self.context_builder_params
         )
-        with open("D:/Important/chatbot_tts/src/logs/global/no_of_batch.txt", "w", encoding="utf-8") as file:
-            file.write(str(len(context_chunks)))
-            file.write("\n\n")
-
-        for i in range(len(context_chunks)):
-            with open(f"D:/Important/chatbot_tts/src/logs/global/context_chunks_{i}.txt", "w", encoding="utf-8") as file:
-                file.write(str(context_chunks[i]))
-                file.write("\n\n")
-
-        with open("D:/Important/chatbot_tts/src/logs/global/context_records.txt", "w", encoding="utf-8") as file:
-            file.write(str(context_records))
-            file.write("\n\n")
-
-
 
 
         if self.callbacks:
@@ -299,10 +276,6 @@ class CustomGlobalSearch(GlobalSearch):
             )
             for data in context_chunks
         ])
-
-        with open("D:/Important/chatbot_tts/src/logs/global/map_responses.txt", "w", encoding="utf-8") as file:
-            file.write(str(map_responses))
-            file.write("\n\n")
 
         if self.callbacks:
             for callback in self.callbacks:
@@ -340,10 +313,7 @@ class CustomGlobalSearch(GlobalSearch):
         search_prompt = ""
         try:
             search_prompt = self.map_system_prompt.format(context_data=context_data)
-            with open("D:/Important/chatbot_tts/src/logs/global/map_search_prompt.txt", "a", encoding="utf-8") as file:
-                file.write(str(search_prompt))
-                file.write("\n\n")
-                file.write("====================================================================================================")
+            
             search_messages = [
                 {"role": "system", "content": search_prompt},
                 {"role": "user", "content": query},
@@ -355,9 +325,7 @@ class CustomGlobalSearch(GlobalSearch):
                 log.info("Map response: %s", search_response)
             try:
                 # parse search response json
-                with open("D:/Important/chatbot_tts/src/logs/global/search_response.txt", "a", encoding="utf-8") as file:
-                    file.write(search_response)
-                    file.write("\n\n")
+                
                 processed_response = self.parse_search_response(search_response)
             except ValueError:
                 # Clean up and retry parse
@@ -370,9 +338,6 @@ class CustomGlobalSearch(GlobalSearch):
                     )
                     processed_response = []
 
-            with open("D:/Important/chatbot_tts/src/logs/global/processed_response.txt", "a", encoding="utf-8") as file:
-                file.write(str(processed_response))
-                file.write("\n\n")
 
             return SearchResult(
                 response=processed_response,
@@ -408,16 +373,12 @@ class CustomGlobalSearch(GlobalSearch):
             A list of key points, each key point is a dictionary with "answer" and "score" keys
         """
         search_response, _j = try_parse_json_object(search_response)
-        with open("D:/Important/chatbot_tts/src/logs/global/parse_search_response.txt", "a", encoding="utf-8") as file:
-            file.write(str(search_response))
-            file.write("\n\n")
+
         if _j == {}:
             return [{"answer": "", "score": 0}]
 
         parsed_elements = json.loads(search_response).get("points")
-        with open("D:/Important/chatbot_tts/src/logs/global/parsed_elements.txt", "a", encoding="utf-8") as file:
-            file.write(str(parsed_elements))
-            file.write("\n\n")
+
         if not parsed_elements or not isinstance(parsed_elements, list):
             return [{"answer": "", "score": 0}]
 

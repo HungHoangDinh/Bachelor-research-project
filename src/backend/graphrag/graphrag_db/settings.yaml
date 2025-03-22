@@ -2,7 +2,7 @@
 encoding_model: cl100k_base
 skip_workflows: []
 llm:
-  api_key: ${GRAPHRAG_API_KEY}
+  api_key: ${OPENAI_API_KEY}
   type: openai_chat # or azure_openai_chat
   model: gpt-4o-mini
   model_supports_json: true # recommended if this is available for your model.
@@ -35,7 +35,7 @@ embeddings:
   # batch_size: 16 # the number of documents to send in a single request
   # batch_max_tokens: 8191 # the maximum number of tokens to send in a single request
   llm:
-    api_key: ${GRAPHRAG_API_KEY}
+    api_key: ${OPENAI_API_KEY}
     type: openai_embedding # or azure_openai_embedding
     model: text-embedding-3-small
     # api_base: https://<instance>.openai.azure.com

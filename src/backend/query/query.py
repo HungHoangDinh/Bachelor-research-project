@@ -1,52 +1,59 @@
-import os
-import sys
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..","..")))
-from src.backend.query.gpt_call.gpt_call_function import GPT_Calling_Functions
-from  src.backend.rag.utils.database_managements import DatabaseManager
+from .gpt_call.gpt_call_function import GPTCallingFunctions
+from  ..rag.utils.database_managements import DatabaseManager
+from ..graphrag.query.LocalQuery import local_query
+from ..graphrag.query.GlobalQuery import global_query
+from .constants.constants import NO_ANSWER_RESPONSE,SUGGEST_QUESTION_RESPONSE
 class Query:
 
     def __init__(self):
-        self.client = GPT_Calling_Functions()
+        self.client = GPTCallingFunctions()
         self.database_manager = DatabaseManager()
 
-    def query(self,question: str):
+    def query(self,question: str,mode:int = 0):
+        
         try:
             question_type = self.client.question_classification(question=question)
-          
-            if question_type == "true":
+            
+            if question_type == True:
                 try:
-                    document = self.database_manager.query_collection(questions=[question])
-                    if document == None:
-                        yield "Xin lỗi bạn, hiện tôi vẫn chưa có thông tin về câu hỏi này."
-                        return
-                    collected_result = ""
-                    for chunk in self.client.query_from_chatgpt(question=question, info=document):
-                        collected_result += chunk
-                        yield chunk
-                
-                    if "Xin lỗi bạn, có thể dữ liệu được cung cấp không có thông tin về kiến thức này." in collected_result:
-                        if(document!=None and len(document[:3])>0):
-
-                            yield "\nCó thể bạn sẽ quan tâm đến các thông tin sau: "
-                            infos=document[:3]
-                            i=1
-                            for info in infos:
-                                yield f"\n{i}. "
-                                i=i+1
-                                for chunk in self.client.query_relevant_question(info):
-                                    yield chunk
+                    if mode==0:
+                        document = self.database_manager.query_collection(questions=self.client.improve_question(question))
+                       
+                        if document == None:
+                            return NO_ANSWER_RESPONSE
+                        answer, cites=self.client.query_from_chatgpt(question=question, info=document)
+                        
+                        if cites ==[]:
+                            if(document!=None and len(document[:3])>0):
+                                new_question=f"\n  {SUGGEST_QUESTION_RESPONSE}\n"
+                                infos=document[:3]
+                                i=0
+                                for info in infos:
+                                    i=i+1
+                                    begin_question=self.client.query_relevant_question(info)
+                                    print(begin_question)
+                                   
+                                    new_question=new_question+"+ "+begin_question
+                                     
+                                    if i<len(info):
+                                        new_question=new_question+"\n"
+                            print(new_question)
+                            return answer+new_question,cites
+                        else:
+                            return answer,cites
+                    elif mode == 1:
+                        return local_query(question),[]
+                    else:
+                        return global_query(question),[]
     
 
                 except Exception as err:
-                    yield f'Error format from answer: {err}'
+                    return f'Error format from answer: {err}',[]
             else:
                 answer = self.client.query_greeting(question=question)
-                yield answer
+                return answer,[]
                 
         except Exception as e:
-            yield f"Error when query: {e}"
-question="Cách điều trị rối loạn nhịp thất"
-query=Query()
-for i in query.query(question):
-    print(i, end="")
+            return f"Error when query: {e}",[]
+
 

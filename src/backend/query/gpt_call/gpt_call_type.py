@@ -24,15 +24,15 @@ class ChatGPTCallingType:
         self.client = OpenAI(api_key=self.open_api_key)
         self.model = OPENAI_CHAT_MODEL
 
-    def default_chat_completion(self, messages) -> str:
+    def default_chat_completion(self, messages,response_format) -> str:
         messages = trim_messages(messages)
     
-        completion = self.client.chat.completions.create(
+        completion = self.client.beta.chat.completions.parse(
             model=self.model,
             messages=messages,
-            
+            response_format=response_format
         )
-        return completion.choices[0].message.content
+        return completion.choices[0].message.parsed
 
     def stream_chat_completion(self, messages):
         messages = trim_messages(messages)

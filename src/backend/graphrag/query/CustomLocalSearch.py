@@ -65,8 +65,7 @@ class CustomLocalSearch(LocalSearch):
             search_prompt = self.system_prompt.format(
                 context_data=context_text, response_type=self.response_type
             )
-            with open("D:/Important/chatbot_tts/src/logs/final_context.txt", "w", encoding="utf-8") as file:
-                file.write(search_prompt)
+         
             search_messages = [
                 {"role": "system", "content": search_prompt},
                 {"role": "user", "content": query},

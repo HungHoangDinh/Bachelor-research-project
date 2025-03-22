@@ -1,5 +1,8 @@
 import asyncio
 import pandas as pd
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..")))
 import tiktoken
 from graphrag.query.context_builder.entity_extraction import EntityVectorStoreKey
 from graphrag.query.indexer_adapters import (
@@ -15,13 +18,13 @@ from graphrag.query.input.loaders.dfs import (
 from graphrag.query.llm.oai.chat_openai import ChatOpenAI
 from graphrag.query.llm.oai.embedding import OpenAIEmbedding
 from graphrag.query.llm.oai.typing import OpenaiApiType
-from .CustomLocalSearch import CustomLocalSearch
+from src.backend.graphrag.query.CustomLocalSearch import CustomLocalSearch
 from graphrag.query.structured_search.local_search.mixed_context import (
     LocalSearchMixedContext,
 )
 from graphrag.query.structured_search.local_search.search import LocalSearch
 from graphrag.vector_stores.lancedb import LanceDBVectorStore
-from .constants import (
+from src.backend.graphrag.query.constants import (
     API_KEY,
     LLM_MODEL,
     EMBEDDING_MODEL,
@@ -59,7 +62,6 @@ class LocalQuery:
     def get_entities(self):
         entity_df = pd.read_parquet(f"{INPUT_DIR}/{ENTITY_TABLE}.parquet")
         entity_embedding_df = pd.read_parquet(f"{INPUT_DIR}/{ENTITY_EMBEDDING_TABLE}.parquet")
-        entity_df.to_excel("D:/Important/chatbot_tts/src/logs/local/entities.xlsx")
         # print(entity_df.head())
         return read_indexer_entities(entity_df, entity_embedding_df, COMMUNITY_LEVEL), entity_df
 
@@ -74,8 +76,7 @@ class LocalQuery:
 
     def get_relationships(self):
         relationship_df = pd.read_parquet(f"{INPUT_DIR}/{RELATIONSHIP_TABLE}.parquet")
-        relationship_df.to_excel("D:/Important/chatbot_tts/src/logs/local/relationships.xlsx")
-        # print(relationship_df.head())
+      
         return read_indexer_relationships(relationship_df)
 
     def get_covariates(self):
@@ -86,14 +87,12 @@ class LocalQuery:
 
     def get_reports(self, entity_df):
         report_df = pd.read_parquet(f"{INPUT_DIR}/{COMMUNITY_REPORT_TABLE}.parquet")
-        report_df.to_excel("D:/Important/chatbot_tts/src/logs/local/reports.xlsx")
-        # print(report_df.head())
+       
         return read_indexer_reports(report_df, entity_df, COMMUNITY_LEVEL)
 
     def get_text_units(self):
         text_unit_df = pd.read_parquet(f"{INPUT_DIR}/{TEXT_UNIT_TABLE}.parquet")
-        text_unit_df.to_excel("D:/Important/chatbot_tts/src/logs/local/text_units.xlsx")
-        # print(text_unit_df.head())
+        
         return read_indexer_text_units(text_unit_df)
 
     def get_search_engine(self):
@@ -169,8 +168,7 @@ class LocalQuery:
 
         return final_response, result, output_tokens
 
-if __name__ == "__main__":
+def local_query(question):
     pipeline = LocalQuery()
-    question = "Phạm vi điều chỉnh của quyết định Ban hành Quy định về quản trị dữ liệu tại Công ty TM & XNK Viettel"
     answer = asyncio.run(pipeline.aquery(question))
-    print(answer)
+    return answer[0]

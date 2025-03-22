@@ -2,11 +2,10 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-
-API_KEY = os.environ["GRAPHRAG_API_KEY"]
-LLM_MODEL = os.environ["GRAPHRAG_LLM_MODEL"]
-EMBEDDING_MODEL = os.environ["GRAPHRAG_EMBEDDING_MODEL"]
-INPUT_DIR = "src/graphrag_db/output"
+API_KEY = os.environ["OPENAI_API_KEY"]
+LLM_MODEL = "gpt-4o-mini" 
+EMBEDDING_MODEL ="text-embedding-3-small"
+INPUT_DIR = "src/backend/graphrag/graphrag_db/output"
 LANCEDB_URI = f"{INPUT_DIR}/lancedb"
 COMMUNITY_REPORT_TABLE = "create_final_community_reports"
 ENTITY_TABLE = "create_final_nodes"

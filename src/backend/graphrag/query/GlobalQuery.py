@@ -1,5 +1,8 @@
 import asyncio
 import pandas as pd
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "..")))
 import tiktoken
 from graphrag.query.indexer_adapters import (
     # read_indexer_communities,
@@ -12,8 +15,8 @@ from graphrag.query.structured_search.global_search.community_context import (
     GlobalCommunityContext,
 )
 from graphrag.query.structured_search.global_search.search import GlobalSearch
-from .CustomGlobalSearch import CustomGlobalSearch
-from .constants import (
+from src.backend.graphrag.query.CustomGlobalSearch import CustomGlobalSearch
+from src.backend.graphrag.query.constants import (
     API_KEY,
     LLM_MODEL,
     INPUT_DIR,
@@ -43,10 +46,6 @@ class GlobalQuery:
         self.report_df = pd.read_parquet(f"{INPUT_DIR}/{COMMUNITY_REPORT_TABLE}.parquet")
         self.entity_embedding_df = pd.read_parquet(f"{INPUT_DIR}/{ENTITY_EMBEDDING_TABLE}.parquet")
 
-        self.community_df.to_excel("D:/Important/chatbot_tts/src/logs/global/communities.xlsx")
-        self.entity_df.to_excel("D:/Important/chatbot_tts/src/logs/global/entities.xlsx")
-        self.report_df.to_excel("D:/Important/chatbot_tts/src/logs/global/reports.xlsx")
-        self.entity_embedding_df.to_excel("D:/Important/chatbot_tts/src/logs/global/entity_embeddings.xlsx")
 
     def prepare_context_builder(self):
         """Prepare the context builder using reports and entities."""
@@ -106,10 +105,9 @@ class GlobalQuery:
         return result.response, result, output_tokens
 
 
-if __name__ == "__main__":
+def global_query(question: str):
     pipeline = GlobalQuery()
     pipeline.load_data()
     pipeline.prepare_context_builder()
-    question = "Tóm tắt về quyết định ban hành Quy định về quản trị dữ liệu tại Công ty TM & XNK Viettel"
     answer = asyncio.run(pipeline.aquery(question))
-    print(answer)
+    return answer[0]
