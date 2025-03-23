@@ -1,156 +1,152 @@
+### This config file contains required core defaults that must be set, along with a handful of common optional settings.
+### For a full list of available settings, see https://microsoft.github.io/graphrag/config/yaml/
 
-encoding_model: cl100k_base
-skip_workflows: []
-llm:
-  api_key: ${OPENAI_API_KEY}
-  type: openai_chat # or azure_openai_chat
-  model: gpt-4o-mini
-  model_supports_json: true # recommended if this is available for your model.
-  max_tokens: 4000
-  request_timeout: 60.0
-  # api_base: https://<instance>.openai.azure.com
-  # api_version: 2024-02-15-preview
-  # organization: <organization_id>
-  # deployment_name: <azure_model_deployment_name>
-  # tokens_per_minute: 150_000 # set a leaky bucket throttle
-  # requests_per_minute: 10_000 # set a leaky bucket throttle
-  max_retries: 5
-  max_retry_wait: 10.0
-  # sleep_on_rate_limit_recommendation: true # whether to sleep when azure suggests wait-times
-  concurrent_requests: 20 # the number of parallel inflight requests that may be made
-  temperature: 0 # temperature for sampling
-  top_p: 1 # top-p sampling
-  n: 1 # Number of completions to generate
+### LLM settings ###
+## There are a number of settings to tune the threading and token limits for LLM calls - check the docs.
 
-parallelization:
-  stagger: 0.3
-  # num_threads: 50 # the number of threads to use for parallel processing
-
-async_mode: threaded # or asyncio
-
-embeddings:
-  ## parallelization: override the global parallelization settings for embeddings
-  async_mode: threaded # or asyncio
-  # target: required # or all
-  # batch_size: 16 # the number of documents to send in a single request
-  # batch_max_tokens: 8191 # the maximum number of tokens to send in a single request
-  llm:
-    api_key: ${OPENAI_API_KEY}
-    type: openai_embedding # or azure_openai_embedding
-    model: text-embedding-3-small
+models:
+  default_chat_model:
+    type: openai_chat # or azure_openai_chat
     # api_base: https://<instance>.openai.azure.com
-    # api_version: 2024-02-15-preview
+    # api_version: 2024-05-01-preview
+    auth_type: api_key # or azure_managed_identity
+    api_key: ${GRAPHRAG_API_KEY} # set this in the generated .env file
+    # audience: "https://cognitiveservices.azure.com/.default"
     # organization: <organization_id>
+    model: gpt-4o-mini
     # deployment_name: <azure_model_deployment_name>
-    # tokens_per_minute: 150_000 # set a leaky bucket throttle
-    # requests_per_minute: 10_000 # set a leaky bucket throttle
-    max_retries: 5
-    max_retry_wait: 10.0
-    # sleep_on_rate_limit_recommendation: true # whether to sleep when azure suggests wait-times
-    concurrent_requests: 32 # the number of parallel inflight requests that may be made
-    batch_size: 32 # the number of documents to send in a single request
-    batch_max_tokens: 16384 # the maximum number of tokens to send in a single request
+    # encoding_model: cl100k_base # automatically set by tiktoken if left undefined
+    model_supports_json: true # recommended if this is available for your model.
+    concurrent_requests: 25 # max number of simultaneous LLM requests allowed
+    async_mode: threaded # or asyncio
+    retry_strategy: native
+    max_retries: -1                   # set to -1 for dynamic retry logic (most optimal setting based on server response)
+    tokens_per_minute: 0              # set to 0 to disable rate limiting
+    requests_per_minute: 0            # set to 0 to disable rate limiting
+  default_embedding_model:
+    type: openai_embedding # or azure_openai_embedding
+    # api_base: https://<instance>.openai.azure.com
+    # api_version: 2024-05-01-preview
+    auth_type: api_key # or azure_managed_identity
+    api_key: ${GRAPHRAG_API_KEY}
+    # audience: "https://cognitiveservices.azure.com/.default"
+    # organization: <organization_id>
+    model: text-embedding-3-small
+    # deployment_name: <azure_model_deployment_name>
+    # encoding_model: cl100k_base # automatically set by tiktoken if left undefined
+    model_supports_json: true # recommended if this is available for your model.
+    concurrent_requests: 25 # max number of simultaneous LLM requests allowed
+    async_mode: threaded # or asyncio
+    retry_strategy: native
+    max_retries: -1                   # set to -1 for dynamic retry logic (most optimal setting based on server response)
+    tokens_per_minute: 0              # set to 0 to disable rate limiting
+    requests_per_minute: 0            # set to 0 to disable rate limiting
 
-chunks:
-  size: 3000
-  overlap: 250
-  group_by_columns: [id] # by default, we don't allow chunks to cross documents
+vector_store:
+  default_vector_store:
+    type: lancedb
+    db_uri: output\lancedb
+    container_name: default
+    overwrite: True
+
+embed_text:
+  model_id: default_embedding_model
+  vector_store_id: default_vector_store
+
+### Input settings ###
 
 input:
   type: file # or blob
-  file_type: text # or csv
+  file_type: text # [csv, text, json]
   base_dir: "input"
-  file_encoding: utf-8
-  file_pattern: ".*\\.txt$"
+
+chunks:
+  size: 1200
+  overlap: 100
+  group_by_columns: [id]
+
+### Output settings ###
+## If blob storage is specified in the following four sections,
+## connection_string and container_name must be provided
 
 cache:
-  type: file # or blob
+  type: file # [file, blob, cosmosdb]
   base_dir: "cache"
-  # connection_string: <azure_blob_storage_connection_string>
-  # container_name: <azure_blob_storage_container_name>
-
-storage:
-  type: file # or blob
-  base_dir: "output"
-  # connection_string: <azure_blob_storage_connection_string>
-  # container_name: <azure_blob_storage_container_name>
 
 reporting:
-  type: file # or console, blob
-  base_dir: "output"
-  # connection_string: <azure_blob_storage_connection_string>
-  # container_name: <azure_blob_storage_container_name>
+  type: file # [file, blob, cosmosdb]
+  base_dir: "logs"
 
-entity_extraction:
-  ## strategy: fully override the entity extraction strategy.
-  ##   type: one of graph_intelligence, graph_intelligence_json and nltk
-  ## llm: override the global llm settings for this task
-  ## parallelization: override the global parallelization settings for this task
-  ## async_mode: override the global async_mode settings for this task
-  prompt: "prompts/entity_extraction.txt"
+output:
+  type: file # [file, blob, cosmosdb]
+  base_dir: "output"
+
+### Workflow settings ###
+
+extract_graph:
+  model_id: default_chat_model
+  prompt: "prompts/extract_graph.txt"
   entity_types: [organization,person,geo,event]
-  max_gleanings: 2
+  max_gleanings: 1
 
 summarize_descriptions:
-  ## llm: override the global llm settings for this task
-  ## parallelization: override the global parallelization settings for this task
-  ## async_mode: override the global async_mode settings for this task
+  model_id: default_chat_model
   prompt: "prompts/summarize_descriptions.txt"
-  max_length: 750
+  max_length: 500
 
-claim_extraction:
-  ## llm: override the global llm settings for this task
-  ## parallelization: override the global parallelization settings for this task
-  ## async_mode: override the global async_mode settings for this task
-  enabled: true
-  prompt: "prompts/claim_extraction.txt"
+extract_graph_nlp:
+  text_analyzer:
+    extractor_type: regex_english # [regex_english, syntactic_parser, cfg]
+
+extract_claims:
+  enabled: false
+  model_id: default_chat_model
+  prompt: "prompts/extract_claims.txt"
   description: "Any claims or facts that could be relevant to information discovery."
   max_gleanings: 1
 
 community_reports:
-  ## llm: override the global llm settings for this task
-  ## parallelization: override the global parallelization settings for this task
-  ## async_mode: override the global async_mode settings for this task
-  prompt: "prompts/community_report.txt"
-  max_length: 3000
-  max_input_length: 12000
+  model_id: default_chat_model
+  graph_prompt: "prompts/community_report_graph.txt"
+  text_prompt: "prompts/community_report_text.txt"
+  max_length: 2000
+  max_input_length: 8000
 
 cluster_graph:
   max_cluster_size: 10
 
 embed_graph:
   enabled: false # if true, will generate node2vec embeddings for nodes
-  # num_walks: 10
-  # walk_length: 40
-  # window_size: 2
-  # iterations: 3
-  # random_seed: 597832
 
 umap:
-  enabled: false # if true, will generate UMAP embeddings for nodes
+  enabled: false # if true, will generate UMAP embeddings for nodes (embed_graph must also be enabled)
 
 snapshots:
-  graphml: true
-  raw_entities: true
-  top_level_nodes: true
+  graphml: false
+  embeddings: false
+
+### Query settings ###
+## The prompt locations are required here, but each search method has a number of optional knobs that can be tuned.
+## See the config docs: https://microsoft.github.io/graphrag/config/yaml/#query
 
 local_search:
-  text_unit_prop: 0.5
-  community_prop: 0.1
-  conversation_history_max_turns: 5
-  top_k_mapped_entities: 10
-  top_k_relationships: 10
-  llm_temperature: 0 # temperature for sampling
-  llm_top_p: 1 # top-p sampling
-  llm_n: 1 # Number of completions to generate
-  max_tokens: 18000
+  chat_model_id: default_chat_model
+  embedding_model_id: default_embedding_model
+  prompt: "prompts/local_search_system_prompt.txt"
 
 global_search:
-  llm_temperature: 0 # temperature for sampling
-  llm_top_p: 1 # top-p sampling
-  llm_n: 1 # Number of completions to generate
-  max_tokens: 18000
-  data_max_tokens: 18000
-  map_max_tokens: 1500
-  reduce_max_tokens: 3000
-  concurrency: 32
+  chat_model_id: default_chat_model
+  map_prompt: "prompts/global_search_map_system_prompt.txt"
+  reduce_prompt: "prompts/global_search_reduce_system_prompt.txt"
+  knowledge_prompt: "prompts/global_search_knowledge_system_prompt.txt"
+
+drift_search:
+  chat_model_id: default_chat_model
+  embedding_model_id: default_embedding_model
+  prompt: "prompts/drift_search_system_prompt.txt"
+  reduce_prompt: "prompts/drift_search_reduce_prompt.txt"
+
+basic_search:
+  chat_model_id: default_chat_model
+  embedding_model_id: default_embedding_model
+  prompt: "prompts/basic_search_system_prompt.txt"

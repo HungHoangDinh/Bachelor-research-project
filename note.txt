@@ -1,0 +1,1 @@
+câu lên khởi tạo graph: graphrag init --root ./graphrag_db/

@@ -14,7 +14,6 @@ The report should include the following sections:
 - RATING EXPLANATION: Give a single sentence explanation of the IMPACT severity rating.
 - DETAILED FINDINGS: A list of 5-10 key insights about the community. Each insight should have a short summary followed by multiple paragraphs of explanatory text grounded according to the grounding rules below. Be comprehensive.
 
-The value of each section should be in Vietnamese.
 Return output as a well-formed JSON-formatted string with the following format:
     {{
         "title": <report_title>,
