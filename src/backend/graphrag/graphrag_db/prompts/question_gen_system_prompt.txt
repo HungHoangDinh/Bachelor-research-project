@@ -18,5 +18,5 @@ These candidate questions should represent the most important or urgent informat
 The candidate questions should be answerable using the data tables provided, but should not mention any specific data fields or data tables in the question text.
 
 If the user's questions reference several named entities, then each candidate question should reference all named entities.
-
+Reply in Vietnamese
 ---Example questions---
