@@ -111,6 +111,13 @@ class GraphragLocalSearch:
             context_builder_params=self.local_context_params,
             response_type="multiple paragraphs",  # free form text describing the response type and format, can be anything, e.g. prioritized list, single paragraph, multiple paragraphs, multiple-page report
         )
+        self.question_generator = LocalQuestionGen(
+            model=self.chat_model,
+            context_builder=self.context_builder,
+            token_encoder=self.token_encoder,
+            model_params=self.model_params,
+            context_builder_params=self.local_context_params,
+        )
 
     def _read_entities(self):
         entity_df = pd.read_parquet(f"{self.input_dir}/{self.entity_table}.parquet")
@@ -147,6 +154,11 @@ class GraphragLocalSearch:
         for _, row in result.context_data["sources"].iterrows():
             citations.append(row["text"])
         return answer,citations
+    async def question_gen(self, query):
+        candidate_questions = await self.question_generator.agenerate(
+            question_history=[query], context_data=None, question_count=5
+        )
+        return candidate_questions.response
     
 
 
