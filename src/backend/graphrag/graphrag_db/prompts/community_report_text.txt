@@ -86,7 +86,7 @@ Output:
 # Real Data
 
 Use the following text for your answer. Do not make anything up in your answer.
-Do not add any information not provided by me or fabricate false information.
+
 Text:
 {input_text}
 

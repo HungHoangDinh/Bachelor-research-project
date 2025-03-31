@@ -61,8 +61,8 @@ input:
   base_dir: "input"
 
 chunks:
-  size: 3600
-  overlap: 300
+  size: 1200
+  overlap: 100
   group_by_columns: [id]
 
 ### Output settings ###
