@@ -1,0 +1,8 @@
+.env
+.venv
+*.pyc
+*.pyo
+backend/graphrag/graphrag_db/cache
+backend/graphrag/graphrag_db/output
+backend/rag/chromadb
+__pycache__/
