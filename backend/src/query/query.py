@@ -31,7 +31,7 @@ class Query:
                         if document == None:
                             self.chat_history_db.add_history_chat(question=question, answer=NO_ANSWER_RESPONSE, citations=[])
                             return NO_ANSWER_RESPONSE,[],[]
-                        answer, cites=  await self.client.query_from_chatgpt(question=question, info=document)
+                        answer, cites= self.client.query_from_chatgpt(question=question, info=document)
                         follow_up_question=await self.local_search.question_gen(query=question)
                         self.chat_history_db.add_history_chat(question=question, answer=answer, citations=cites)
                         return answer,cites,follow_up_question

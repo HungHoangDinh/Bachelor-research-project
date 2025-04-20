@@ -56,7 +56,7 @@ class DeletePDFRequest(BaseModel):
     filename: str
 class DeletePDFResponse(BaseResponse):
     data: Optional[str]
-@app.get("/api/v1/chat/history",response_model=ChatHistoryResponse)
+@app.post("/api/v1/chat/history",response_model=ChatHistoryResponse)
 def get_chat_history(limit: Optional[int] = None)-> ChatHistoryResponse:
     try:
         history = chat_history.get_history_chat(limit=limit)
