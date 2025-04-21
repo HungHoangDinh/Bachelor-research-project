@@ -17,7 +17,7 @@ def download_file_request(filename):
         raise(f"Failed to download file: {e}")
 def delete_file_request(filename):
     try:
-        response = requests.post(DELETE_API, json={"filename": filename})
+        response = requests.delete(DELETE_API, json={"filename": filename})
         response.raise_for_status()
         return response.json().get("message", "")
     except requests.exceptions.RequestException as e:
