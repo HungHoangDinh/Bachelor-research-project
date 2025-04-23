@@ -9,6 +9,7 @@ def delete_file(filename,file_status_placeholder):
     if "thành công" in message:
         st.session_state["files"].remove(filename)
         file_status_placeholder.success(f"File {filename} đã được xóa thành công.")
+        st.session_state["files_content"].pop(filename, None)
     else:
         file_status_placeholder.error(f"File {filename} không thể xóa!")
 def upload_file(uploaded_file,status_placeholder):
@@ -18,6 +19,7 @@ def upload_file(uploaded_file,status_placeholder):
         if status == "SUCCESS":
             st.session_state["files"].append(uploaded_file.name)
             status_placeholder.success("File uploaded successfully!")
+            st.session_state["files_content"][uploaded_file.name] = download_file_request(uploaded_file.name)
             break
         elif status == "FAILURE":
             status_placeholder.error("File upload failed!")
@@ -34,7 +36,10 @@ def citation_function(cite):
 def suggested_questions(questions):
     for item in questions:
         st.markdown(item)
-
+def update_key():
+    st.session_state.uploader_key += 1
+if "uploader_key" not in st.session_state:
+    st.session_state.uploader_key = 0
 if "suggested_questions" not in st.session_state:
     st.session_state.suggested_questions = [
         "- Chào bạn!",
@@ -42,7 +47,11 @@ if "suggested_questions" not in st.session_state:
     ]
 if "files" not in st.session_state:
         st.session_state["files"] = list_pdfs_request()
-
+if "files_content" not in st.session_state:
+    st.session_state["files_content"] = {}
+    for file_name in st.session_state["files"]:
+        data_stream= download_file_request(file_name)
+        st.session_state["files_content"][file_name] = data_stream
 with st.sidebar:
     st.title('QA Medical Bot')
     chat_mode = st.selectbox(
@@ -56,21 +65,21 @@ with st.sidebar:
            suggested_questions(st.session_state.suggested_questions)
     st.header("📂 File Manager")
     status_placeholder = st.empty()
-    uploaded_file = st.file_uploader("Upload a file", type=["pdf"],key=uuid.uuid4())
+    uploaded_file = st.file_uploader("Upload a file", type=["pdf"],key=f"uploader_{st.session_state.uploader_key}")
     if uploaded_file is not None:
         if uploaded_file.name not in st.session_state["files"]:
             upload_file(uploaded_file,status_placeholder)
+            update_key()
         
     #Todo: add file manager to upload files
     st.title("Available files")
     file_status_placeholder = st.empty()
     if st.session_state["files"]:
         for file_name in st.session_state["files"]:
-            data_stream= download_file_request(file_name)
             col1, col2, col3 = st.columns([0.6, 0.2, 0.2])
             col1.write(file_name)
             
-            col2.download_button(label="⬇️", data=data_stream, file_name=file_name, mime="application/pdf")
+            col2.download_button(label="⬇️", data=st.session_state["files_content"][file_name], file_name=file_name, mime="application/pdf")
             col3.button("🗑️",key=f"delete_{file_name}", on_click=delete_file,args=[file_name,file_status_placeholder])
     
 def get_answer(prompt):
