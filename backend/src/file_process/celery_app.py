@@ -5,7 +5,7 @@ celery_app = Celery(
     "worker",
     broker="redis://redis:6379/0",
     backend="redis://redis:6379/0",
-    include=["src.upload_process.tasks"],
+    include=["src.file_process.tasks"],
 )
 
 celery_app.conf.update(

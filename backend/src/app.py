@@ -4,11 +4,12 @@ from query.question_answer_log.log_process import ChatHistory,ChatHistoryData
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from query.query import Query
 from pydantic import BaseModel
-from src.upload_process.tasks import save_pdf_to_minio, download_pdf_from_minio,delete_pdf
+from src.file_process.tasks import save_pdf_to_minio, download_pdf_from_minio,delete_pdf
 from celery.result import AsyncResult
 from fastapi.responses import StreamingResponse
-from src.upload_process.celery_app import celery_app
-from src.upload_process.minio_client import (bucket_name, minio_client)
+from src.file_process.celery_app import celery_app
+import urllib.parse
+from src.file_process.minio_client import (bucket_name, minio_client)
 from dotenv import load_dotenv
 import asyncio
 import uvicorn
@@ -125,7 +126,8 @@ async def download_file(request:DownloadFileRequest):
                     io.BytesIO(file_data),
                     media_type='application/pdf',
                     headers={
-                        "Content-Disposition": f"attachment; filename={filename}"}
+                        "Content-Disposition": f"attachment; filename*=UTF-8''{urllib.parse.quote(filename)}"
+                    }
                 )
             else:
                 raise HTTPException(
