@@ -26,6 +26,10 @@ class DataProcessing():
                     
                 else:
                     print("No collection found")
-data_processing=DataProcessing()
-data_processing.process_all_file()
-
+    def process_single_file(self, file_name, content):
+        # This function will be used to process a single file
+        data, metadata, ids=self.chunking_function.chunking_documents(content,file_name)
+        if self.database.collection:
+            self.database.add_data(data,metadata,ids)
+        else:
+            print("No collection found")
