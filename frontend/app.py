@@ -15,14 +15,14 @@ def delete_file(filename,file_status_placeholder):
 def upload_file(uploaded_file,status_placeholder):
     status_id=upload_file_request(uploaded_file)
     while True:
-        status=check_task_status_request(status_id)
+        status,message=check_task_status_request(status_id)
         if status == "SUCCESS":
             st.session_state["files"].append(uploaded_file.name)
-            status_placeholder.success("File uploaded successfully!")
+            status_placeholder.success(message)
             st.session_state["files_content"][uploaded_file.name] = download_file_request(uploaded_file.name)
             break
         elif status == "FAILURE":
-            status_placeholder.error("File upload failed!")
+            status_placeholder.error(message)
             break
         else:
             status_placeholder.info("File is being processed...")
@@ -69,6 +69,9 @@ with st.sidebar:
     if uploaded_file is not None:
         if uploaded_file.name not in st.session_state["files"]:
             upload_file(uploaded_file,status_placeholder)
+            update_key()
+        else:
+            status_placeholder.warning("File already exists!")
             update_key()
         
     #Todo: add file manager to upload files

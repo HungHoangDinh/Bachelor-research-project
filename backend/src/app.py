@@ -48,7 +48,7 @@ class ChatRequest(BaseModel):
 class TaskStatusRequest(BaseModel):
     task_id: str
 class TaskStatusResponse(BaseResponse):
-    data: Optional[str]
+    data: dict 
 class DownloadFileRequest(BaseModel):
     filename: str
 class ListPDFsResponse(BaseResponse):
@@ -106,7 +106,7 @@ def get_task_status(request: TaskStatusRequest)-> TaskStatusResponse:
 
         task_result = AsyncResult(task_id, app=celery_app)
     # Status is PENDING, SUCCESS, FAILURE
-        return TaskStatusResponse(code=0, message="Lấy trạng thái tác vụ thành công", data=task_result.state)
+        return TaskStatusResponse(code=0, message="Lấy trạng thái tác vụ thành công", data={ "status": task_result.state, "result": task_result.info.get("message") if task_result.state == "SUCCESS" else "" })
     except Exception as e:
         return TaskStatusResponse(code=1, message=f"Lỗi khi lấy trạng thái tác vụ: {str(e)}", data=None)
 

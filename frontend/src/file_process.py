@@ -26,7 +26,9 @@ def check_task_status_request(task_id):
     try:
         response = requests.post(CHECK_STATUS_API, json={"task_id": task_id})
         response.raise_for_status()
-        return response.json().get("data", "")
+        result = response.json().get("data")
+        return result["status"], result["result"]
+
     except requests.exceptions.RequestException as e:
         raise(f"Failed to check task status: {e}")
 def list_pdfs_request():

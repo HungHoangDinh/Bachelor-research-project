@@ -13,7 +13,7 @@ load_dotenv()
 
 
 class ParseHandler():
-    def __call__(self):
+    def __init__(self):
         self.prompt_medical = """Bạn là một trợ lý AI chuyên xử lý hình ảnh chứa nội dung y tế. Nhiệm vụ của bạn là trích xuất và chuyển nội dung từ hình ảnh thành định dạng Markdown theo các quy tắc sau:
             1. Dùng `#` cho **chủ đề chính** (ví dụ: tên sách y khoa, tên bệnh, chuyên ngành y).
             2. Dùng `##` cho **phần** (ví dụ: "Chương 1", "Phần Lâm sàng", "Mục 3").
@@ -27,6 +27,7 @@ class ParseHandler():
             """
         self.api_key=os.environ.get("OPENAI_API_KEY")
         self.client= OpenAI(api_key=self.api_key)
+
     def pdf_to_images(self, file_stream, zoom_x=2.0, zoom_y=2.0):
         pdf_document = fitz.open(stream=file_stream, filetype="pdf")
         images = []
@@ -46,7 +47,7 @@ class ParseHandler():
         print("số trang: ",len(image_base64s))
         return image_base64s
 
-    def parse_pdf(self, image_base64s, file_name):
+    def parse_pdf(self, image_base64s):
         content=""
         for i in range(0, len(image_base64s)):
             messages=[
@@ -82,7 +83,11 @@ class ParseHandler():
                 stream=False
             )
             content+="\n"
-            content+=response
+            content+=response.choices[0].message.content
 
             print(content)
+        return content
+    def get_content(self, file_stream):
+        image_base64s=self.pdf_to_images(file_stream)
+        content=self.parse_pdf(image_base64s)
         return content

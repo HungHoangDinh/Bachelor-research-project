@@ -5,7 +5,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 from langchain_text_splitters import MarkdownHeaderTextSplitter
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from backend.src.rag.constants.constants import CHUNK_SIZE, CHUNK_OVERLAP
+from ..constants.constants import CHUNK_SIZE, CHUNK_OVERLAP
 class Chunking:
     def __init__(self):
         load_dotenv()

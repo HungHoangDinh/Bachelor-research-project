@@ -1,9 +1,9 @@
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..","..","..")))
-from backend.src.rag.constants.constants import DATA_DIRECTORY
-from backend.src.rag.utils.chunking import Chunking
-from backend.src.rag.utils.database_managements import DatabaseManager
+from ..constants.constants import DATA_DIRECTORY
+from .chunking import Chunking
+from .database_managements import DatabaseManager
 
 
 class DataProcessing():
@@ -28,8 +28,16 @@ class DataProcessing():
                     print("No collection found")
     def process_single_file(self, file_name, content):
         # This function will be used to process a single file
-        data, metadata, ids=self.chunking_function.chunking_documents(content,file_name)
-        if self.database.collection:
-            self.database.add_data(data,metadata,ids)
-        else:
-            print("No collection found")
+        try:
+            data, metadata, ids=self.chunking_function.chunking_documents(content,file_name)
+            if self.database.collection:
+                self.database.add_data(data,metadata,ids)
+                return True
+            else:
+                print("No collection found")
+                return False
+                
+        except Exception as e:
+            print(f"Error processing file {file_name}: {e}")
+            return False
+            

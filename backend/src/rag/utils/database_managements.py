@@ -66,8 +66,10 @@ class DatabaseManager:
     def delete_data(self, filename):
         try:
             self.collection.delete(where={"filename":filename})
-        except:
-            print("Error when delete data from database")
+            return True
+        except Exception as e:
+            print(f"Error when delete data from database: {e}")
+            return False
     def query_collection(self, questions):
         """Get data from vector database"""
         try:
