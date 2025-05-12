@@ -19,8 +19,6 @@ api_port = int(os.environ.get('API_PORT', 8000))
 api_host = os.environ.get("API_HOST", "0.0.0.0") 
 
 app = FastAPI(title="Medical Chatbot API")
-
-query = Query()
 chat_history = ChatHistory()
 
 class BaseResponse(BaseModel):
@@ -68,6 +66,7 @@ def get_chat_history(limit: Optional[int] = None)-> ChatHistoryResponse:
 @app.post("/api/v1/chat",response_model=ChatResponse)
 async def chat(request: ChatRequest)-> ChatResponse:
     try:
+        query = Query()
         answer, cites,follow_up_question =await query.query(question=request.question, mode=request.mode)
         return ChatResponse(code=0, message="Chat response retrieved successfully",data=Query_From_Chatgpt_Output(answer=answer,cites=cites, follow_up_question=follow_up_question))
     except Exception as e:

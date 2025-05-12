@@ -31,6 +31,8 @@ class DataProcessing():
         try:
             data, metadata, ids=self.chunking_function.chunking_documents(content,file_name)
             if self.database.collection:
+                print(data)
+                print(metadata)
                 self.database.add_data(data,metadata,ids)
                 return True
             else:

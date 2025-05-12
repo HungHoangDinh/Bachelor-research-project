@@ -1,9 +1,9 @@
-10:15:06,301 graphrag.cli.index INFO Logging enabled at C:\Users\ASUS\Downloads\Bachelor_research_project\src\backend\graphrag\graphrag_db\logs\indexing-engine.log
-10:15:08,122 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:09,311 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-10:15:09,314 graphrag.cli.index INFO Starting pipeline run. dry_run=False
-10:15:09,316 graphrag.cli.index INFO Using default configuration: {
-    "root_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\src\\backend\\graphrag\\graphrag_db",
+19:37:27,279 graphrag.cli.index INFO Logging enabled at C:\Users\ASUS\Downloads\Bachelor_research_project\backend\src\graphrag\graphrag_db\logs\indexing-engine.log
+19:37:29,105 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:37:30,799 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+19:37:30,804 graphrag.cli.index INFO Starting pipeline run. dry_run=False
+19:37:30,808 graphrag.cli.index INFO Using default configuration: {
+    "root_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db",
     "models": {
         "default_chat_model": {
             "api_key": "==== REDACTED ====",
@@ -64,19 +64,19 @@
     },
     "reporting": {
         "type": "file",
-        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\src\\backend\\graphrag\\graphrag_db\\logs",
+        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db\\logs",
         "storage_account_blob_url": null
     },
     "output": {
         "type": "file",
-        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\src\\backend\\graphrag\\graphrag_db\\output",
+        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db\\output",
         "storage_account_blob_url": null,
         "cosmosdb_account_url": null
     },
     "outputs": null,
     "update_index_output": {
         "type": "file",
-        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\src\\backend\\graphrag\\graphrag_db\\update_output",
+        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db\\update_output",
         "storage_account_blob_url": null,
         "cosmosdb_account_url": null
     },
@@ -295,7 +295,7 @@
     "vector_store": {
         "default_vector_store": {
             "type": "lancedb",
-            "db_uri": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\src\\backend\\graphrag\\graphrag_db\\output\\lancedb",
+            "db_uri": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db\\output\\lancedb",
             "url": null,
             "audience": null,
             "container_name": "==== REDACTED ====",
@@ -305,70 +305,1104 @@
     },
     "workflows": null
 }
-10:15:09,317 graphrag.storage.file_pipeline_storage INFO Creating file storage at C:\Users\ASUS\Downloads\Bachelor_research_project\src\backend\graphrag\graphrag_db\output
-10:15:09,317 graphrag.index.input.factory INFO loading input from root_dir=input
-10:15:09,317 graphrag.index.input.factory INFO using file storage for input
-10:15:09,319 graphrag.storage.file_pipeline_storage INFO search C:\Users\ASUS\Downloads\Bachelor_research_project\src\backend\graphrag\graphrag_db\input for files matching .*\.txt$
-10:15:09,321 graphrag.index.input.util INFO Found 1 InputFileType.text files, loading 1
-10:15:09,321 graphrag.index.input.util INFO Total number of unfiltered InputFileType.text rows: 1
-10:15:09,325 graphrag.index.run.run_pipeline INFO Final # of rows loaded: 1
-10:15:09,340 graphrag.utils.storage INFO reading table from storage: documents.parquet
-10:15:09,388 graphrag.utils.storage INFO reading table from storage: documents.parquet
-10:15:09,393 graphrag.utils.storage INFO reading table from storage: text_units.parquet
-10:15:09,438 graphrag.utils.storage INFO reading table from storage: text_units.parquet
-10:15:12,751 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:16,597 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:16,604 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:17,457 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:19,391 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:19,402 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:19,886 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:23,758 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:24,605 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:25,302 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:26,106 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:26,812 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:28,341 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:28,782 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:29,37 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:29,235 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:29,542 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:29,922 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:31,312 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:31,374 graphrag.utils.storage INFO reading table from storage: entities.parquet
-10:15:31,396 graphrag.utils.storage INFO reading table from storage: relationships.parquet
-10:15:31,479 graphrag.utils.storage INFO reading table from storage: entities.parquet
-10:15:31,491 graphrag.utils.storage INFO reading table from storage: relationships.parquet
-10:15:31,568 graphrag.utils.storage INFO reading table from storage: text_units.parquet
-10:15:31,572 graphrag.utils.storage INFO reading table from storage: entities.parquet
-10:15:31,572 graphrag.utils.storage INFO reading table from storage: relationships.parquet
-10:15:31,634 graphrag.utils.storage INFO reading table from storage: relationships.parquet
-10:15:31,641 graphrag.utils.storage INFO reading table from storage: entities.parquet
-10:15:31,650 graphrag.utils.storage INFO reading table from storage: communities.parquet
-10:15:31,691 graphrag.index.operations.summarize_communities.graph_context.context_builder INFO Number of nodes at level=1 => 10
-10:15:31,715 graphrag.index.operations.summarize_communities.graph_context.context_builder INFO Number of nodes at level=0 => 38
-10:15:37,916 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:46,332 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:56,547 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:56,954 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:57,933 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:59,711 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:59,724 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
-10:15:59,781 graphrag.utils.storage INFO reading table from storage: documents.parquet
-10:15:59,795 graphrag.utils.storage INFO reading table from storage: relationships.parquet
-10:15:59,801 graphrag.utils.storage INFO reading table from storage: text_units.parquet
-10:15:59,812 graphrag.utils.storage INFO reading table from storage: entities.parquet
-10:15:59,812 graphrag.utils.storage INFO reading table from storage: community_reports.parquet
-10:15:59,842 graphrag.index.workflows.generate_text_embeddings INFO Creating embeddings
-10:15:59,842 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding entity.description: default-entity-description
-10:15:59,865 graphrag.index.operations.embed_text.strategies.openai INFO embedding 38 inputs via 38 snippets using 3 batches. max_batch_size=16, max_tokens=8191
-10:16:01,51 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-10:16:01,451 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-10:16:01,691 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-10:16:02,579 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding community.full_content: default-community-full_content
-10:16:02,584 graphrag.index.operations.embed_text.strategies.openai INFO embedding 7 inputs via 7 snippets using 1 batches. max_batch_size=16, max_tokens=8191
-10:16:03,562 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-10:16:04,58 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding text_unit.text: default-text_unit-text
-10:16:04,61 graphrag.index.operations.embed_text.strategies.openai INFO embedding 6 inputs via 6 snippets using 1 batches. max_batch_size=16, max_tokens=8191
-10:16:04,753 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
-10:16:05,341 graphrag.cli.index INFO All workflows completed successfully.
+19:37:30,811 graphrag.storage.file_pipeline_storage INFO Creating file storage at C:\Users\ASUS\Downloads\Bachelor_research_project\backend\src\graphrag\graphrag_db\output
+19:37:30,811 graphrag.index.input.factory INFO loading input from root_dir=input
+19:37:30,811 graphrag.index.input.factory INFO using file storage for input
+19:37:30,813 graphrag.storage.file_pipeline_storage INFO search C:\Users\ASUS\Downloads\Bachelor_research_project\backend\src\graphrag\graphrag_db\input for files matching .*\.txt$
+19:39:02,976 graphrag.cli.index INFO Logging enabled at C:\Users\ASUS\Downloads\Bachelor_research_project\backend\src\graphrag\graphrag_db\logs\indexing-engine.log
+19:39:03,986 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:05,170 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+19:39:05,179 graphrag.cli.index INFO Starting pipeline run. dry_run=False
+19:39:05,179 graphrag.cli.index INFO Using default configuration: {
+    "root_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db",
+    "models": {
+        "default_chat_model": {
+            "api_key": "==== REDACTED ====",
+            "auth_type": "api_key",
+            "type": "openai_chat",
+            "model": "gpt-4o-mini",
+            "encoding_model": "o200k_base",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "deployment_name": null,
+            "proxy": null,
+            "audience": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "retry_strategy": "native",
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "concurrent_requests": 25,
+            "responses": null,
+            "async_mode": "threaded"
+        },
+        "default_embedding_model": {
+            "api_key": "==== REDACTED ====",
+            "auth_type": "api_key",
+            "type": "openai_embedding",
+            "model": "text-embedding-3-small",
+            "encoding_model": "cl100k_base",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "deployment_name": null,
+            "proxy": null,
+            "audience": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "retry_strategy": "native",
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "concurrent_requests": 25,
+            "responses": null,
+            "async_mode": "threaded"
+        }
+    },
+    "reporting": {
+        "type": "file",
+        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db\\logs",
+        "storage_account_blob_url": null
+    },
+    "output": {
+        "type": "file",
+        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db\\output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "outputs": null,
+    "update_index_output": {
+        "type": "file",
+        "base_dir": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db\\update_output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "text_column": "text",
+        "title_column": null,
+        "metadata": null
+    },
+    "embed_graph": {
+        "enabled": false,
+        "dimensions": 1536,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "use_lcc": true
+    },
+    "embed_text": {
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "names": [],
+        "strategy": null,
+        "model_id": "default_embedding_model",
+        "vector_store_id": "default_vector_store"
+    },
+    "chunks": {
+        "size": 1200,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": "tokens",
+        "encoding_model": "cl100k_base",
+        "prepend_metadata": false,
+        "chunk_size_includes_metadata": false
+    },
+    "snapshots": {
+        "embeddings": false,
+        "graphml": false
+    },
+    "extract_graph": {
+        "prompt": "prompts/extract_graph.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": null,
+        "model_id": "default_chat_model"
+    },
+    "extract_graph_nlp": {
+        "normalize_edge_weights": true,
+        "text_analyzer": {
+            "extractor_type": "regex_english",
+            "model_name": "en_core_web_md",
+            "max_word_length": 15,
+            "word_delimiter": " ",
+            "include_named_entities": true,
+            "exclude_nouns": null,
+            "exclude_entity_tags": [
+                "DATE"
+            ],
+            "exclude_pos_tags": [
+                "DET",
+                "PRON",
+                "INTJ",
+                "X"
+            ],
+            "noun_phrase_tags": [
+                "PROPN",
+                "NOUNS"
+            ],
+            "noun_phrase_grammars": {
+                "PROPN,PROPN": "PROPN",
+                "NOUN,NOUN": "NOUNS",
+                "NOUNS,NOUN": "NOUNS",
+                "ADJ,ADJ": "ADJ",
+                "ADJ,NOUN": "NOUNS"
+            }
+        },
+        "concurrent_requests": 25
+    },
+    "summarize_descriptions": {
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null,
+        "model_id": "default_chat_model"
+    },
+    "community_reports": {
+        "graph_prompt": "prompts/community_report_graph.txt",
+        "text_prompt": "prompts/community_report_text.txt",
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null,
+        "model_id": "default_chat_model"
+    },
+    "extract_claims": {
+        "enabled": false,
+        "prompt": "prompts/extract_claims.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": null,
+        "model_id": "default_chat_model"
+    },
+    "prune_graph": {
+        "min_node_freq": 2,
+        "max_node_freq_std": null,
+        "min_node_degree": 1,
+        "max_node_degree_std": null,
+        "min_edge_weight_pct": 40,
+        "remove_ego_nodes": false,
+        "lcc_only": false
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "use_lcc": true,
+        "seed": 3735928559
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "prompt": "prompts/local_search_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "text_unit_prop": 0.5,
+        "community_prop": 0.15,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "map_prompt": "prompts/global_search_map_system_prompt.txt",
+        "reduce_prompt": "prompts/global_search_reduce_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "knowledge_prompt": "prompts/global_search_knowledge_system_prompt.txt",
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32,
+        "dynamic_search_llm": "gpt-4o-mini",
+        "dynamic_search_threshold": 1,
+        "dynamic_search_keep_parent": false,
+        "dynamic_search_num_repeats": 1,
+        "dynamic_search_use_summary": false,
+        "dynamic_search_concurrent_coroutines": 16,
+        "dynamic_search_max_level": 2
+    },
+    "drift_search": {
+        "prompt": "prompts/drift_search_system_prompt.txt",
+        "reduce_prompt": "prompts/drift_search_reduce_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "reduce_max_tokens": 2000,
+        "reduce_temperature": 0,
+        "concurrency": 32,
+        "drift_k_followups": 20,
+        "primer_folds": 5,
+        "primer_llm_max_tokens": 12000,
+        "n_depth": 3,
+        "local_search_text_unit_prop": 0.9,
+        "local_search_community_prop": 0.1,
+        "local_search_top_k_mapped_entities": 10,
+        "local_search_top_k_relationships": 10,
+        "local_search_max_data_tokens": 12000,
+        "local_search_temperature": 0,
+        "local_search_top_p": 1,
+        "local_search_n": 1,
+        "local_search_llm_max_gen_tokens": 4096
+    },
+    "basic_search": {
+        "prompt": "prompts/basic_search_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "text_unit_prop": 0.5,
+        "conversation_history_max_turns": 5,
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "vector_store": {
+        "default_vector_store": {
+            "type": "lancedb",
+            "db_uri": "C:\\Users\\ASUS\\Downloads\\Bachelor_research_project\\backend\\src\\graphrag\\graphrag_db\\output\\lancedb",
+            "url": null,
+            "audience": null,
+            "container_name": "==== REDACTED ====",
+            "database_name": null,
+            "overwrite": true
+        }
+    },
+    "workflows": null
+}
+19:39:05,195 graphrag.storage.file_pipeline_storage INFO Creating file storage at C:\Users\ASUS\Downloads\Bachelor_research_project\backend\src\graphrag\graphrag_db\output
+19:39:05,195 graphrag.index.input.factory INFO loading input from root_dir=input
+19:39:05,196 graphrag.index.input.factory INFO using file storage for input
+19:39:05,198 graphrag.storage.file_pipeline_storage INFO search C:\Users\ASUS\Downloads\Bachelor_research_project\backend\src\graphrag\graphrag_db\input for files matching .*\.txt$
+19:39:05,208 graphrag.index.input.util INFO Found 1 InputFileType.text files, loading 1
+19:39:05,209 graphrag.index.input.util INFO Total number of unfiltered InputFileType.text rows: 1
+19:39:05,212 graphrag.index.run.run_pipeline INFO Final # of rows loaded: 1
+19:39:05,256 graphrag.utils.storage INFO reading table from storage: documents.parquet
+19:39:05,349 graphrag.utils.storage INFO reading table from storage: documents.parquet
+19:39:05,354 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+19:39:05,405 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+19:39:11,736 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:12,998 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:14,162 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:16,95 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:23,264 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:23,599 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:25,573 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:25,625 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:25,904 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:26,542 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:28,360 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:29,148 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:29,209 graphrag.utils.storage INFO reading table from storage: entities.parquet
+19:39:29,228 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+19:39:29,302 graphrag.utils.storage INFO reading table from storage: entities.parquet
+19:39:29,326 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+19:39:29,414 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+19:39:29,418 graphrag.utils.storage INFO reading table from storage: entities.parquet
+19:39:29,421 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+19:39:29,475 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+19:39:29,481 graphrag.utils.storage INFO reading table from storage: entities.parquet
+19:39:29,486 graphrag.utils.storage INFO reading table from storage: communities.parquet
+19:39:29,528 graphrag.index.operations.summarize_communities.graph_context.context_builder INFO Number of nodes at level=0 => 16
+19:39:42,87 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:43,300 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:43,437 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+19:39:43,506 graphrag.utils.storage INFO reading table from storage: documents.parquet
+19:39:43,527 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+19:39:43,531 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+19:39:43,550 graphrag.utils.storage INFO reading table from storage: entities.parquet
+19:39:43,553 graphrag.utils.storage INFO reading table from storage: community_reports.parquet
+19:39:43,582 graphrag.index.workflows.generate_text_embeddings INFO Creating embeddings
+19:39:43,582 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding text_unit.text: default-text_unit-text
+19:39:43,622 graphrag.index.operations.embed_text.strategies.openai INFO embedding 3 inputs via 3 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+19:39:44,923 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+19:39:45,480 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding entity.description: default-entity-description
+19:39:45,483 graphrag.index.operations.embed_text.strategies.openai INFO embedding 18 inputs via 18 snippets using 2 batches. max_batch_size=16, max_tokens=8191
+19:39:46,92 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+19:39:46,323 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+19:39:46,851 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding community.full_content: default-community-full_content
+19:39:46,855 graphrag.index.operations.embed_text.strategies.openai INFO embedding 3 inputs via 3 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+19:39:49,301 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+19:39:49,622 graphrag.cli.index INFO All workflows completed successfully.
+13:37:31,580 graphrag.cli.index INFO Logging enabled at /app/src/graphrag/graphrag_db/logs/indexing-engine.log
+13:37:32,800 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:34,456 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:37:34,460 graphrag.cli.index INFO Starting pipeline run. dry_run=False
+13:37:34,461 graphrag.cli.index INFO Using default configuration: {
+    "root_dir": "/app/src/graphrag/graphrag_db",
+    "models": {
+        "default_chat_model": {
+            "api_key": "==== REDACTED ====",
+            "auth_type": "api_key",
+            "type": "openai_chat",
+            "model": "gpt-4o-mini",
+            "encoding_model": "o200k_base",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "deployment_name": null,
+            "proxy": null,
+            "audience": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "retry_strategy": "native",
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "concurrent_requests": 25,
+            "responses": null,
+            "async_mode": "threaded"
+        },
+        "default_embedding_model": {
+            "api_key": "==== REDACTED ====",
+            "auth_type": "api_key",
+            "type": "openai_embedding",
+            "model": "text-embedding-3-small",
+            "encoding_model": "cl100k_base",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "deployment_name": null,
+            "proxy": null,
+            "audience": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "retry_strategy": "native",
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "concurrent_requests": 25,
+            "responses": null,
+            "async_mode": "threaded"
+        }
+    },
+    "reporting": {
+        "type": "file",
+        "base_dir": "/app/src/graphrag/graphrag_db/logs",
+        "storage_account_blob_url": null
+    },
+    "output": {
+        "type": "file",
+        "base_dir": "/app/src/graphrag/graphrag_db/output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "outputs": null,
+    "update_index_output": {
+        "type": "file",
+        "base_dir": "/app/src/graphrag/graphrag_db/update_output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "text_column": "text",
+        "title_column": null,
+        "metadata": null
+    },
+    "embed_graph": {
+        "enabled": false,
+        "dimensions": 1536,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "use_lcc": true
+    },
+    "embed_text": {
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "names": [],
+        "strategy": null,
+        "model_id": "default_embedding_model",
+        "vector_store_id": "default_vector_store"
+    },
+    "chunks": {
+        "size": 1200,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": "tokens",
+        "encoding_model": "cl100k_base",
+        "prepend_metadata": false,
+        "chunk_size_includes_metadata": false
+    },
+    "snapshots": {
+        "embeddings": false,
+        "graphml": false
+    },
+    "extract_graph": {
+        "prompt": "prompts/extract_graph.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": null,
+        "model_id": "default_chat_model"
+    },
+    "extract_graph_nlp": {
+        "normalize_edge_weights": true,
+        "text_analyzer": {
+            "extractor_type": "regex_english",
+            "model_name": "en_core_web_md",
+            "max_word_length": 15,
+            "word_delimiter": " ",
+            "include_named_entities": true,
+            "exclude_nouns": null,
+            "exclude_entity_tags": [
+                "DATE"
+            ],
+            "exclude_pos_tags": [
+                "DET",
+                "PRON",
+                "INTJ",
+                "X"
+            ],
+            "noun_phrase_tags": [
+                "PROPN",
+                "NOUNS"
+            ],
+            "noun_phrase_grammars": {
+                "PROPN,PROPN": "PROPN",
+                "NOUN,NOUN": "NOUNS",
+                "NOUNS,NOUN": "NOUNS",
+                "ADJ,ADJ": "ADJ",
+                "ADJ,NOUN": "NOUNS"
+            }
+        },
+        "concurrent_requests": 25
+    },
+    "summarize_descriptions": {
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null,
+        "model_id": "default_chat_model"
+    },
+    "community_reports": {
+        "graph_prompt": "prompts/community_report_graph.txt",
+        "text_prompt": "prompts/community_report_text.txt",
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null,
+        "model_id": "default_chat_model"
+    },
+    "extract_claims": {
+        "enabled": false,
+        "prompt": "prompts/extract_claims.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": null,
+        "model_id": "default_chat_model"
+    },
+    "prune_graph": {
+        "min_node_freq": 2,
+        "max_node_freq_std": null,
+        "min_node_degree": 1,
+        "max_node_degree_std": null,
+        "min_edge_weight_pct": 40,
+        "remove_ego_nodes": false,
+        "lcc_only": false
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "use_lcc": true,
+        "seed": 3735928559
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "prompt": "prompts/local_search_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "text_unit_prop": 0.5,
+        "community_prop": 0.15,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "map_prompt": "prompts/global_search_map_system_prompt.txt",
+        "reduce_prompt": "prompts/global_search_reduce_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "knowledge_prompt": "prompts/global_search_knowledge_system_prompt.txt",
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32,
+        "dynamic_search_llm": "gpt-4o-mini",
+        "dynamic_search_threshold": 1,
+        "dynamic_search_keep_parent": false,
+        "dynamic_search_num_repeats": 1,
+        "dynamic_search_use_summary": false,
+        "dynamic_search_concurrent_coroutines": 16,
+        "dynamic_search_max_level": 2
+    },
+    "drift_search": {
+        "prompt": "prompts/drift_search_system_prompt.txt",
+        "reduce_prompt": "prompts/drift_search_reduce_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "reduce_max_tokens": 2000,
+        "reduce_temperature": 0,
+        "concurrency": 32,
+        "drift_k_followups": 20,
+        "primer_folds": 5,
+        "primer_llm_max_tokens": 12000,
+        "n_depth": 3,
+        "local_search_text_unit_prop": 0.9,
+        "local_search_community_prop": 0.1,
+        "local_search_top_k_mapped_entities": 10,
+        "local_search_top_k_relationships": 10,
+        "local_search_max_data_tokens": 12000,
+        "local_search_temperature": 0,
+        "local_search_top_p": 1,
+        "local_search_n": 1,
+        "local_search_llm_max_gen_tokens": 4096
+    },
+    "basic_search": {
+        "prompt": "prompts/basic_search_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "text_unit_prop": 0.5,
+        "conversation_history_max_turns": 5,
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "vector_store": {
+        "default_vector_store": {
+            "type": "lancedb",
+            "db_uri": "/app/src/graphrag/graphrag_db/output/lancedb",
+            "url": null,
+            "audience": null,
+            "container_name": "==== REDACTED ====",
+            "database_name": null,
+            "overwrite": true
+        }
+    },
+    "workflows": null
+}
+13:37:34,464 graphrag.storage.file_pipeline_storage INFO Creating file storage at /app/src/graphrag/graphrag_db/output
+13:37:34,470 graphrag.index.input.factory INFO loading input from root_dir=input
+13:37:34,471 graphrag.index.input.factory INFO using file storage for input
+13:37:34,474 graphrag.storage.file_pipeline_storage INFO search /app/src/graphrag/graphrag_db/input for files matching .*\.txt$
+13:37:34,511 graphrag.index.input.util INFO Found 2 InputFileType.text files, loading 2
+13:37:34,513 graphrag.index.input.util INFO Total number of unfiltered text rows: 2
+13:37:34,515 graphrag.utils.storage INFO reading table from storage: documents.parquet
+13:37:34,590 graphrag.storage.file_pipeline_storage INFO Creating file storage at /app/src/graphrag/graphrag_db/update_output
+13:37:34,600 graphrag.storage.file_pipeline_storage INFO search /app/src/graphrag/graphrag_db/output for files matching \.parquet$
+13:37:34,987 graphrag.utils.storage INFO reading table from storage: communities.parquet
+13:37:35,12 graphrag.utils.storage INFO reading table from storage: community_reports.parquet
+13:37:35,37 graphrag.utils.storage INFO reading table from storage: documents.parquet
+13:37:35,114 graphrag.utils.storage INFO reading table from storage: entities.parquet
+13:37:35,178 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+13:37:35,278 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+13:37:35,319 graphrag.index.run.run_pipeline INFO Final # of rows loaded: 1
+13:37:35,401 graphrag.utils.storage INFO reading table from storage: documents.parquet
+13:37:35,501 graphrag.utils.storage INFO reading table from storage: documents.parquet
+13:37:35,517 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+13:37:35,561 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+13:37:46,388 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:48,260 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:53,952 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:56,211 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:58,178 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:37:58,246 graphrag.utils.storage INFO reading table from storage: entities.parquet
+13:37:58,260 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+13:37:58,321 graphrag.utils.storage INFO reading table from storage: entities.parquet
+13:37:58,335 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+13:37:58,391 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+13:37:58,403 graphrag.utils.storage INFO reading table from storage: entities.parquet
+13:37:58,415 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+13:37:58,461 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+13:37:58,473 graphrag.utils.storage INFO reading table from storage: entities.parquet
+13:37:58,485 graphrag.utils.storage INFO reading table from storage: communities.parquet
+13:37:58,506 graphrag.index.operations.summarize_communities.graph_context.context_builder INFO Number of nodes at level=0 => 15
+13:38:12,941 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:38:14,248 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:38:15,397 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+13:38:15,447 graphrag.utils.storage INFO reading table from storage: documents.parquet
+13:38:15,459 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+13:38:15,472 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+13:38:15,486 graphrag.utils.storage INFO reading table from storage: entities.parquet
+13:38:15,503 graphrag.utils.storage INFO reading table from storage: community_reports.parquet
+13:38:15,523 graphrag.index.workflows.generate_text_embeddings INFO Creating embeddings
+13:38:15,524 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding community.full_content: default-community-full_content
+13:38:15,638 graphrag.index.operations.embed_text.strategies.openai INFO embedding 3 inputs via 3 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+13:38:17,141 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:38:17,790 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding entity.description: default-entity-description
+13:38:17,836 graphrag.index.operations.embed_text.strategies.openai INFO embedding 15 inputs via 15 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+13:38:18,723 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:38:19,621 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding text_unit.text: default-text_unit-text
+13:38:19,682 graphrag.index.operations.embed_text.strategies.openai INFO embedding 2 inputs via 2 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+13:38:20,76 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:38:20,400 graphrag.utils.storage INFO reading table from storage: documents.parquet
+13:38:20,416 graphrag.utils.storage INFO reading table from storage: documents.parquet
+13:38:20,436 graphrag.utils.storage INFO reading table from storage: entities.parquet
+13:38:20,448 graphrag.utils.storage INFO reading table from storage: entities.parquet
+13:38:20,470 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+13:38:20,483 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+13:38:20,531 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+13:38:20,548 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+13:38:20,577 graphrag.utils.storage INFO reading table from storage: communities.parquet
+13:38:20,590 graphrag.utils.storage INFO reading table from storage: communities.parquet
+13:38:20,615 graphrag.utils.storage INFO reading table from storage: community_reports.parquet
+13:38:20,631 graphrag.utils.storage INFO reading table from storage: community_reports.parquet
+13:38:20,663 graphrag.index.workflows.generate_text_embeddings INFO Creating embeddings
+13:38:20,664 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding community.full_content: default-community-full_content
+13:38:20,699 graphrag.index.operations.embed_text.strategies.openai INFO embedding 6 inputs via 6 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+13:38:22,213 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:38:22,944 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding entity.description: default-entity-description
+13:38:22,965 graphrag.index.operations.embed_text.strategies.openai INFO embedding 33 inputs via 33 snippets using 3 batches. max_batch_size=16, max_tokens=8191
+13:38:23,573 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:38:24,48 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:38:24,225 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:38:24,915 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding text_unit.text: default-text_unit-text
+13:38:24,936 graphrag.index.operations.embed_text.strategies.openai INFO embedding 5 inputs via 5 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+13:38:26,197 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+13:38:26,815 graphrag.cli.index INFO All workflows completed successfully.
+14:10:24,347 graphrag.cli.index INFO Logging enabled at /app/src/graphrag/graphrag_db/logs/indexing-engine.log
+14:10:24,924 openai._base_client INFO Retrying request to /chat/completions in 0.386764 seconds
+14:10:26,184 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:27,257 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+14:10:27,260 graphrag.cli.index INFO Starting pipeline run. dry_run=False
+14:10:27,261 graphrag.cli.index INFO Using default configuration: {
+    "root_dir": "/app/src/graphrag/graphrag_db",
+    "models": {
+        "default_chat_model": {
+            "api_key": "==== REDACTED ====",
+            "auth_type": "api_key",
+            "type": "openai_chat",
+            "model": "gpt-4o-mini",
+            "encoding_model": "o200k_base",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "deployment_name": null,
+            "proxy": null,
+            "audience": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "retry_strategy": "native",
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "concurrent_requests": 25,
+            "responses": null,
+            "async_mode": "threaded"
+        },
+        "default_embedding_model": {
+            "api_key": "==== REDACTED ====",
+            "auth_type": "api_key",
+            "type": "openai_embedding",
+            "model": "text-embedding-3-small",
+            "encoding_model": "cl100k_base",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "deployment_name": null,
+            "proxy": null,
+            "audience": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "retry_strategy": "native",
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "concurrent_requests": 25,
+            "responses": null,
+            "async_mode": "threaded"
+        }
+    },
+    "reporting": {
+        "type": "file",
+        "base_dir": "/app/src/graphrag/graphrag_db/logs",
+        "storage_account_blob_url": null
+    },
+    "output": {
+        "type": "file",
+        "base_dir": "/app/src/graphrag/graphrag_db/output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "outputs": null,
+    "update_index_output": {
+        "type": "file",
+        "base_dir": "/app/src/graphrag/graphrag_db/update_output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "text_column": "text",
+        "title_column": null,
+        "metadata": null
+    },
+    "embed_graph": {
+        "enabled": false,
+        "dimensions": 1536,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "use_lcc": true
+    },
+    "embed_text": {
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "names": [],
+        "strategy": null,
+        "model_id": "default_embedding_model",
+        "vector_store_id": "default_vector_store"
+    },
+    "chunks": {
+        "size": 1200,
+        "overlap": 100,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": "tokens",
+        "encoding_model": "cl100k_base",
+        "prepend_metadata": false,
+        "chunk_size_includes_metadata": false
+    },
+    "snapshots": {
+        "embeddings": false,
+        "graphml": false
+    },
+    "extract_graph": {
+        "prompt": "prompts/extract_graph.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": null,
+        "model_id": "default_chat_model"
+    },
+    "extract_graph_nlp": {
+        "normalize_edge_weights": true,
+        "text_analyzer": {
+            "extractor_type": "regex_english",
+            "model_name": "en_core_web_md",
+            "max_word_length": 15,
+            "word_delimiter": " ",
+            "include_named_entities": true,
+            "exclude_nouns": null,
+            "exclude_entity_tags": [
+                "DATE"
+            ],
+            "exclude_pos_tags": [
+                "DET",
+                "PRON",
+                "INTJ",
+                "X"
+            ],
+            "noun_phrase_tags": [
+                "PROPN",
+                "NOUNS"
+            ],
+            "noun_phrase_grammars": {
+                "PROPN,PROPN": "PROPN",
+                "NOUN,NOUN": "NOUNS",
+                "NOUNS,NOUN": "NOUNS",
+                "ADJ,ADJ": "ADJ",
+                "ADJ,NOUN": "NOUNS"
+            }
+        },
+        "concurrent_requests": 25
+    },
+    "summarize_descriptions": {
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null,
+        "model_id": "default_chat_model"
+    },
+    "community_reports": {
+        "graph_prompt": "prompts/community_report_graph.txt",
+        "text_prompt": "prompts/community_report_text.txt",
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null,
+        "model_id": "default_chat_model"
+    },
+    "extract_claims": {
+        "enabled": false,
+        "prompt": "prompts/extract_claims.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": null,
+        "model_id": "default_chat_model"
+    },
+    "prune_graph": {
+        "min_node_freq": 2,
+        "max_node_freq_std": null,
+        "min_node_degree": 1,
+        "max_node_degree_std": null,
+        "min_edge_weight_pct": 40,
+        "remove_ego_nodes": false,
+        "lcc_only": false
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "use_lcc": true,
+        "seed": 3735928559
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "prompt": "prompts/local_search_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "text_unit_prop": 0.5,
+        "community_prop": 0.15,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "map_prompt": "prompts/global_search_map_system_prompt.txt",
+        "reduce_prompt": "prompts/global_search_reduce_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "knowledge_prompt": "prompts/global_search_knowledge_system_prompt.txt",
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32,
+        "dynamic_search_llm": "gpt-4o-mini",
+        "dynamic_search_threshold": 1,
+        "dynamic_search_keep_parent": false,
+        "dynamic_search_num_repeats": 1,
+        "dynamic_search_use_summary": false,
+        "dynamic_search_concurrent_coroutines": 16,
+        "dynamic_search_max_level": 2
+    },
+    "drift_search": {
+        "prompt": "prompts/drift_search_system_prompt.txt",
+        "reduce_prompt": "prompts/drift_search_reduce_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "reduce_max_tokens": 2000,
+        "reduce_temperature": 0,
+        "concurrency": 32,
+        "drift_k_followups": 20,
+        "primer_folds": 5,
+        "primer_llm_max_tokens": 12000,
+        "n_depth": 3,
+        "local_search_text_unit_prop": 0.9,
+        "local_search_community_prop": 0.1,
+        "local_search_top_k_mapped_entities": 10,
+        "local_search_top_k_relationships": 10,
+        "local_search_max_data_tokens": 12000,
+        "local_search_temperature": 0,
+        "local_search_top_p": 1,
+        "local_search_n": 1,
+        "local_search_llm_max_gen_tokens": 4096
+    },
+    "basic_search": {
+        "prompt": "prompts/basic_search_system_prompt.txt",
+        "chat_model_id": "default_chat_model",
+        "embedding_model_id": "default_embedding_model",
+        "text_unit_prop": 0.5,
+        "conversation_history_max_turns": 5,
+        "temperature": 0,
+        "top_p": 1,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "vector_store": {
+        "default_vector_store": {
+            "type": "lancedb",
+            "db_uri": "/app/src/graphrag/graphrag_db/output/lancedb",
+            "url": null,
+            "audience": null,
+            "container_name": "==== REDACTED ====",
+            "database_name": null,
+            "overwrite": true
+        }
+    },
+    "workflows": null
+}
+14:10:27,262 graphrag.storage.file_pipeline_storage INFO Creating file storage at /app/src/graphrag/graphrag_db/output
+14:10:27,265 graphrag.index.input.factory INFO loading input from root_dir=input
+14:10:27,265 graphrag.index.input.factory INFO using file storage for input
+14:10:27,267 graphrag.storage.file_pipeline_storage INFO search /app/src/graphrag/graphrag_db/input for files matching .*\.txt$
+14:10:27,284 graphrag.index.input.util INFO Found 1 InputFileType.text files, loading 1
+14:10:27,285 graphrag.index.input.util INFO Total number of unfiltered text rows: 1
+14:10:27,291 graphrag.index.run.run_pipeline INFO Final # of rows loaded: 1
+14:10:27,323 graphrag.utils.storage INFO reading table from storage: documents.parquet
+14:10:27,408 graphrag.utils.storage INFO reading table from storage: documents.parquet
+14:10:27,421 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+14:10:27,454 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+14:10:28,438 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:28,915 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:30,7 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:30,124 graphrag.utils.storage INFO reading table from storage: entities.parquet
+14:10:30,137 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+14:10:30,186 graphrag.utils.storage INFO reading table from storage: entities.parquet
+14:10:30,205 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+14:10:30,269 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+14:10:30,283 graphrag.utils.storage INFO reading table from storage: entities.parquet
+14:10:30,294 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+14:10:30,351 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+14:10:30,369 graphrag.utils.storage INFO reading table from storage: entities.parquet
+14:10:30,383 graphrag.utils.storage INFO reading table from storage: communities.parquet
+14:10:30,431 graphrag.index.operations.summarize_communities.graph_context.context_builder INFO Number of nodes at level=0 => 9
+14:10:39,976 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:41,689 httpx INFO HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+14:10:41,735 graphrag.utils.storage INFO reading table from storage: documents.parquet
+14:10:41,747 graphrag.utils.storage INFO reading table from storage: relationships.parquet
+14:10:41,758 graphrag.utils.storage INFO reading table from storage: text_units.parquet
+14:10:41,771 graphrag.utils.storage INFO reading table from storage: entities.parquet
+14:10:41,785 graphrag.utils.storage INFO reading table from storage: community_reports.parquet
+14:10:41,801 graphrag.index.workflows.generate_text_embeddings INFO Creating embeddings
+14:10:41,802 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding community.full_content: default-community-full_content
+14:10:41,941 graphrag.index.operations.embed_text.strategies.openai INFO embedding 2 inputs via 2 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+14:10:42,415 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+14:10:42,946 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding text_unit.text: default-text_unit-text
+14:10:42,983 graphrag.index.operations.embed_text.strategies.openai INFO embedding 3 inputs via 3 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+14:10:43,245 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding entity.description: default-entity-description
+14:10:43,278 graphrag.index.operations.embed_text.strategies.openai INFO embedding 9 inputs via 9 snippets using 1 batches. max_batch_size=16, max_tokens=8191
+14:10:44,708 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+14:10:45,492 graphrag.cli.index INFO All workflows completed successfully.

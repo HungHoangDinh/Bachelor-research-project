@@ -26,7 +26,7 @@ def upload_file(uploaded_file,status_placeholder):
             break
         else:
             status_placeholder.info("File is being processed...")
-            time.sleep(2)
+            time.sleep(10)
 @st.dialog("Citations")
 def citation_function(cite):
     
