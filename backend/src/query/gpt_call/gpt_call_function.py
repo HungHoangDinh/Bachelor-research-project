@@ -91,6 +91,7 @@ class GPTCallingFunctions:
             "7. Nếu không tìm thấy dữ liệu cho câu hỏi thì trả về 'Xin lỗi bạn, có thể dữ liệu được cung cấp không có thông tin về kiến thức này.' và khi đó citations là một mảng rỗng\n"
             "8. Không được trả về thông tin không có trong nội dung mà tôi cung cấp hoặc bịa đặt thông tin sai sự thật.\n"
             "9.Mọi câu hỏi được đề cập đều đến lĩnh vực y tế."
+            "10. Không được thêm các số thứ tự citations vào nội dung cau trả lời của bạn.\n"
             
         )
 
