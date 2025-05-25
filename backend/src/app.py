@@ -20,6 +20,7 @@ api_host = os.environ.get("API_HOST", "0.0.0.0")
 
 app = FastAPI(title="Medical Chatbot API")
 chat_history = ChatHistory()
+query_eval = Query()
 
 class BaseResponse(BaseModel):
     code: int  # 0 if success, > 0 if failed, code value indicates error type
@@ -31,8 +32,12 @@ class Query_From_Chatgpt_Output(BaseModel):
     answer: str
     cites: list[str]
     follow_up_question: list[str]
+class ChatEval(BaseModel):
+    answer:str
 class ChatResponse(BaseResponse):
     data: Optional[Query_From_Chatgpt_Output]
+class ChatResponseEval(BaseResponse):
+    data: Optional[ChatEval]
 class DeleteDBResponse(BaseResponse):
     data: Optional[str]
 class FileTaskReturn(BaseModel):
@@ -68,9 +73,17 @@ async def chat(request: ChatRequest)-> ChatResponse:
     try:
         query = Query()
         answer, cites,follow_up_question =await query.query(question=request.question, mode=request.mode)
+        print(answer)
         return ChatResponse(code=0, message="Chat response retrieved successfully",data=Query_From_Chatgpt_Output(answer=answer,cites=cites, follow_up_question=follow_up_question))
     except Exception as e:
         return ChatResponse(code=1, message=f"Failed to retrieve chat response: {str(e)}",data=None)
+@app.post("/api/v1/chat/eval",response_model=ChatResponseEval)
+async def chat_eval(request: ChatRequest)-> ChatResponseEval:
+    try:
+        answer = await query_eval.query_eval(question=request.question, mode=request.mode)
+        return ChatResponseEval(code=0, message="Chat evaluation retrieved successfully", data=ChatEval(answer=answer))
+    except Exception as e:
+        return ChatResponseEval(code=1, message=f"Failed to retrieve chat evaluation: {str(e)}", data=None)
 @app.delete("/api/v1/delete/chat_log",response_model=DeleteDBResponse)
 def delete_database()->DeleteDBResponse:
     try:

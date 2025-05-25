@@ -56,7 +56,7 @@ with st.sidebar:
     st.title('QA Medical Bot')
     chat_mode = st.selectbox(
         "Choose chat mode to use!",
-        ("RAG", "Local Graphrag", "Local Graphrag(Custom)", "Global Graphrag", "Global Graphrag(Custom)", "Drift Graphrag", "Drift Graphrag(Custom)"),
+        ("RAG","RAG(Custom)", "Local Graphrag", "Local Graphrag(Custom)", "Global Graphrag", "Global Graphrag(Custom)", "Drift Graphrag", "Drift Graphrag(Custom)"),
         index=0,
         placeholder="Select chat mode...",
     )
@@ -88,6 +88,8 @@ with st.sidebar:
 def get_answer(prompt):
     mode=0
     if chat_mode=="RAG":
+        mode=7
+    elif chat_mode=="RAG(Custom)":
         mode=0
     elif chat_mode=="Local Graphrag":
         mode=1

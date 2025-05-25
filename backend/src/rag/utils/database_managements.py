@@ -1,5 +1,6 @@
 import os
 import sys
+import traceback
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..","..","..")))
 import chromadb
 from chromadb.utils import embedding_functions
@@ -42,7 +43,9 @@ class DatabaseManager:
             )
 
             return collection
-        except:
+        except Exception as e:
+            traceback.print_exc()
+            print(f"Error when create or retrieve collection: {e}")
             print("Error creating or retrieving collection")
             return None
     def add_data(self, data, metadata, ids_list):
@@ -78,6 +81,7 @@ class DatabaseManager:
                 query_texts=questions,
                 n_results=10,
             )
+            print(collection_answer)
             collection_documents = collection_answer['documents']
             collection_distances = collection_answer['distances']
             collection_id = collection_answer['ids']
@@ -100,6 +104,7 @@ class DatabaseManager:
                 if len(top_documents) == TOP_DOCUMENTS_TO_RETRIEVE:
                     break
             return top_documents
-        except:
+        except Exception as e:
+            print(f"Error when query collection: {e}")
             print("Error when query collection")
             return None

@@ -51,7 +51,7 @@ def gen_testset():
         generator = TestsetGenerator(llm=generator_llm, embedding_model=generator_embeddings)
         dataset = generator.generate_with_langchain_docs(docs, testset_size=TESTSET_SIZE)
         df=dataset.to_pandas()
-        df.to_csv(f"{RESULT_DIRECTORY}/dataset.csv", index=False, encoding="utf-8")
+        df.to_csv(f"{RESULT_DIRECTORY}/dataset2.csv", index=False, encoding="utf-8")
     except Exception as e:
         logging.error(f"Error in gen_testset: {e}")
         raise e

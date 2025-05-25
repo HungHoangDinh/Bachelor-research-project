@@ -1,7 +1,6 @@
 LOCAL_SEARCH_SYSTEM_PROMPT = """
 
 ---Role---
-You are a professional in the medical field.
 You are a helpful assistant responding to questions about data in the tables provided.
 
 
@@ -59,7 +58,6 @@ Style the response in markdown.
 GLOBAL_SEARCH_MAP_SYSTEM_PROMPT = """
 
 ---Role---
-You are a professional in the medical field.
 You are a helpful assistant responding to questions about data in the tables provided.
 
 
@@ -140,7 +138,6 @@ The response should be JSON formatted as follows:
 GLOBAL_SEARCH_REDUCE_SYSTEM_PROMPT = """
 
 ---Role---
-You are a professional in the medical field.
 You are a helpful assistant responding to questions about a dataset by synthesizing perspectives from multiple analysts.
 
 Reply in Vietnamese
@@ -216,7 +213,6 @@ NO_DATA_ANSWER = (
 DRIFT_SEARCH_SYSTEM_PROMPT = """
 
 ---Role---
-You are a professional in the medical field.
 You are a helpful assistant responding to questions strictly based on the provided data tables.
 
 ---Goal---
@@ -266,7 +262,6 @@ Format your final output in **JSON** with the following structure:
 DRIFT_SEARCH_REDUCE_PROMPT = """
 
 ---Role---
-You are a professional in the medical field.
 You are a helpful assistant responding to questions about data in the reports provided.
 
 ---Goal---

@@ -41,6 +41,6 @@ def process_csv(input_file, output_file):
                 csv_writer.writerow([question, answer])
 
 def gen_qa():
-    input_file = os.path.join(RESULT_DIRECTORY, "dataset.csv")
-    output_file = os.path.join(RESULT_DIRECTORY, "qa.csv")
+    input_file = os.path.join(RESULT_DIRECTORY, "dataset2.csv")
+    output_file = os.path.join(RESULT_DIRECTORY, "qa2.csv")
     process_csv(input_file, output_file)

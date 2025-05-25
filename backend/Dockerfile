@@ -9,7 +9,7 @@ WORKDIR /app
 
 # Install Python packages
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install -r  requirements.txt
 
 # Copy application code
 COPY . .
