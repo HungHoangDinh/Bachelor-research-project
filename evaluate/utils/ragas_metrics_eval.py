@@ -1,13 +1,10 @@
-import csv
-import ast
 from dotenv import load_dotenv
 import pandas as pd
 from datasets import Dataset
 from ragas import EvaluationDataset
 from ragas.metrics._factual_correctness import FactualCorrectness
-from ragas.metrics import LLMContextRecall, Faithfulness, FactualCorrectness, SemanticSimilarity,AnswerAccuracy,ResponseRelevancy
+from ragas.metrics import  FactualCorrectness, SemanticSimilarity,ResponseRelevancy
 from ragas import evaluate
-import os
 from ragas.llms import LangchainLLMWrapper
 from ragas.embeddings import LangchainEmbeddingsWrapper
 from langchain_openai import ChatOpenAI
@@ -42,7 +39,6 @@ def eval(excel_eval_file, output_file,mode:str):
     evaluator_llm = LangchainLLMWrapper(ChatOpenAI(model="gpt-4o-mini"))
     evaluator_embeddings = LangchainEmbeddingsWrapper(OpenAIEmbeddings())
     metrics = [
-        AnswerAccuracy(llm=evaluator_llm),
         ResponseRelevancy(llm=evaluator_llm,embeddings=evaluator_embeddings),
         FactualCorrectness(llm = evaluator_llm),
         SemanticSimilarity(embeddings=evaluator_embeddings),

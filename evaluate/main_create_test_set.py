@@ -18,8 +18,6 @@ def regas_eval():
     print("Evaluation completed and saved to results/eval.xlsx")
 def no_ragas_eval():
     gen_check_answer(input_dir="data",input_file="results/eval.xlsx",output_file="results/data",start=0,end=18)
-    gen_check_answer(input_dir="data1",input_file="results/eval.xlsx",output_file="results/data1",start=18,end=28)
-    gen_check_answer(input_dir="data2",input_file="results/eval.xlsx",output_file="results/data2",start=28,end=50)
 
 if __name__ == "__main__":
     regas_eval()
