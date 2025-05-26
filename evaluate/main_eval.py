@@ -1,0 +1,11 @@
+from utils.ragas_metrics_eval import eval
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_RAG_ragas_result.xlsx", mode="RAG")
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_RAG_Custom_ragas_result.xlsx", mode="RAG Custom")
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_Local_Search_ragas_result.xlsx", mode="Local Search")
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_Local_Search_Custom_ragas_result.xlsx", mode="Local Search Custom")
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_Global_Search_ragas_result.xlsx", mode="Global Search") 
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_Global_Search_Custom_ragas_result.xlsx", mode="Global Search Custom")
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_Drift_Search_ragas_result.xlsx", mode="Drift Search")   
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_Drift_Search_Custom_ragas_result.xlsx", mode="Drift Search Custom")
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_Google_AI_Studio_ragas_result.xlsx", mode="Google AI Studio")
+eval(excel_eval_file="results/eval.xlsx", output_file="results/eval_ChatGPT_ragas_result.xlsx", mode="ChatGPT")

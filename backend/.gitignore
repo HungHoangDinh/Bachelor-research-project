@@ -2,7 +2,10 @@
 .venv
 *.pyc
 *.pyo
-backend/graphrag/graphrag_db/cache
-backend/graphrag/graphrag_db/output
-backend/rag/chromadb
+src/graphrag/graphrag_db/cache
+src/graphrag/graphrag_db/output
+src/graphrag/graphrag_db/input
+src/graphrag/graphrag_db/logs
+src/rag/chromadb
+src/rag/data
 __pycache__/
