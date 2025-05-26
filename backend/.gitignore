@@ -9,3 +9,4 @@ src/graphrag/graphrag_db/logs
 src/rag/chromadb
 src/rag/data
 __pycache__/
+src/token_dir
