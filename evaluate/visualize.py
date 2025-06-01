@@ -64,8 +64,111 @@ def visualize_columns_char(total_datas: list, correct_datas: list, modes: list[s
     plt.tight_layout()
     plt.savefig('results/images/total_correct_info.png', dpi=300)
 
+def visualize_RCMMS_03_07():
+    """
+    Visualizes the columns for each mode with the given data.
 
+    Args:
+        total_datas (list): List of total data values.
+        correct_datas (list): List of correct data values.
+        modes (list[str]): List of modes to visualize.
+    """
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import textwrap
+    data=[0.61,0.68,0.91,0.81,0.61,0.55,0.83,0.77,0.32,0.38]
+    num_bars = len(data)
+    modes=["RAG","RAG Custom","Local Search","Local Search Custom","Global Search","Global Search Custom","DRIFT Search","DRIFT Search Custom","Google AI Studio","ChatGPT"]
+    spacing = 1.5
+    x = np.arange(num_bars) * spacing
+    bar_width = 0.35
 
+    # Tự động xuống dòng cho tên mode dài
+    wrapped_modes = [textwrap.fill(mode, width=10) for mode in modes]
+
+    plt.figure(figsize=(12, 6))
+
+    for i in range(num_bars):
+        plt.bar(x[i], data[i], width=bar_width, color='orange', zorder=1)
+        plt.text(x[i], data[i] + 0.02, data[i], ha='center', fontsize=9)
+
+    plt.xticks(x, wrapped_modes)
+    plt.title('RCMMS when α = 0.3 and β = 0.7')
+    plt.xlabel('Modes')
+    plt.ylabel('Value')
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    plt.savefig('results/images/RCMMS_03_07.jpg', dpi=300)
+def visualize_RCMMS_05_05():
+    """
+    Visualizes the columns for each mode with the given data.
+
+    Args:
+        total_datas (list): List of total data values.
+        correct_datas (list): List of correct data values.
+        modes (list[str]): List of modes to visualize.
+    """
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import textwrap
+    data=[0.67,0.73,0.85,0.82,0.64,0.61,0.77,0.78,0.40,0.48]
+    num_bars = len(data)
+    modes=["RAG","RAG Custom","Local Search","Local Search Custom","Global Search","Global Search Custom","DRIFT Search","DRIFT Search Custom","Google AI Studio","ChatGPT"]
+    spacing = 1.5
+    x = np.arange(num_bars) * spacing
+    bar_width = 0.35
+
+    # Tự động xuống dòng cho tên mode dài
+    wrapped_modes = [textwrap.fill(mode, width=10) for mode in modes]
+
+    plt.figure(figsize=(12, 6))
+
+    for i in range(num_bars):
+        plt.bar(x[i], data[i], width=bar_width, color='orange', zorder=1)
+        plt.text(x[i], data[i] + 0.02, data[i], ha='center', fontsize=9)
+
+    plt.xticks(x, wrapped_modes)
+    plt.title('RCMMS when α = 0.5 and β = 0.5')
+    plt.xlabel('Modes')
+    plt.ylabel('Value')
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    plt.savefig('results/images/RCMMS_05_05.jpg', dpi=300)
+def visualize_RCMMS_07_03():
+    """
+    Visualizes the columns for each mode with the given data.
+
+    Args:
+        total_datas (list): List of total data values.
+        correct_datas (list): List of correct data values.
+        modes (list[str]): List of modes to visualize.
+    """
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import textwrap
+    data=[0.74,0.78,0.79,0.83,0.66,0.67,0.72,0.79,0.49,0.58]
+    num_bars = len(data)
+    modes=["RAG","RAG Custom","Local Search","Local Search Custom","Global Search","Global Search Custom","DRIFT Search","DRIFT Search Custom","Google AI Studio","ChatGPT"]
+    spacing = 1.5
+    x = np.arange(num_bars) * spacing
+    bar_width = 0.35
+
+    # Tự động xuống dòng cho tên mode dài
+    wrapped_modes = [textwrap.fill(mode, width=10) for mode in modes]
+
+    plt.figure(figsize=(12, 6))
+
+    for i in range(num_bars):
+        plt.bar(x[i], data[i], width=bar_width, color='orange', zorder=1)
+        plt.text(x[i], data[i] + 0.02, data[i], ha='center', fontsize=9)
+
+    plt.xticks(x, wrapped_modes)
+    plt.title('RCMMS when α = 0.7 and β = 0.3')
+    plt.xlabel('Modes')
+    plt.ylabel('Value')
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    plt.savefig('results/images/RCMMS_07_03.jpg', dpi=300)
 def get_data_ragas(metrics:str):
     """
     Retrieves the data for each mode based on the given metrics.
@@ -110,6 +213,9 @@ def visualize_no_rag():
         correct.append(df[mode].sum())
     visualize_columns_char(total, correct, MODES)
 if __name__ == "__main__":
-    visualize_ragas()
-    visualize_no_rag()
+    # visualize_ragas()
+    # visualize_no_rag()
+    # visualize_RCMMS_03_07()
+    visualize_RCMMS_05_05()
+    visualize_RCMMS_07_03()
     print("Visualization completed and saved in results/images/")

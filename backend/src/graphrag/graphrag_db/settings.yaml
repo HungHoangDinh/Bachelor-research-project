@@ -61,8 +61,8 @@ input:
   base_dir: "input"
 
 chunks:
-  size: 3600
-  overlap: 500
+  size: 1200
+  overlap: 100
   group_by_columns: [id]
 
 ### Output settings ###
@@ -86,13 +86,13 @@ output:
 extract_graph:
   model_id: default_chat_model
   prompt: "prompts/extract_graph.txt"
-  entity_types: [organization,person,geo,event]
+  entity_types: [organization, person, geo, event, disease, symptom, drug, treatment, body_part, test, medical_device, dosage, measurement, procedure, hospital, insurance, demographic, clinical_finding, gene, anatomy_term]
   max_gleanings: 1
 
 summarize_descriptions:
   model_id: default_chat_model
   prompt: "prompts/summarize_descriptions.txt"
-  max_length: 2000
+  max_length: 500
 
 extract_graph_nlp:
   text_analyzer:
@@ -109,17 +109,17 @@ community_reports:
   model_id: default_chat_model
   graph_prompt: "prompts/community_report_graph.txt"
   text_prompt: "prompts/community_report_text.txt"
-  max_length: 4000
+  max_length: 2000
   max_input_length: 8000
 
 cluster_graph:
   max_cluster_size: 10
 
 embed_graph:
-  enabled: true # if true, will generate node2vec embeddings for nodes
+  enabled: false # if true, will generate node2vec embeddings for nodes
 
 umap:
-  enabled: true # if true, will generate UMAP embeddings for nodes (embed_graph must also be enabled)
+  enabled: false # if true, will generate UMAP embeddings for nodes (embed_graph must also be enabled)
 
 snapshots:
   graphml: true

@@ -131,6 +131,7 @@ class GraphragLocalSearch:
         entity_df = pd.read_parquet(f"{self.input_dir}/{self.entity_table}.parquet")
         community_df = pd.read_parquet(f"{self.input_dir}/{self.community_table}.parquet")
         entities = read_indexer_entities(entity_df, community_df, self.community_level)
+        print(f"Number of entities: {len(entities)}")
         return entities
     def _connect_db(self):
         # load description embeddings to an in-memory lancedb vectorstore
@@ -143,15 +144,19 @@ class GraphragLocalSearch:
     def _read_relationships(self):
         relationship_df = pd.read_parquet(f"{self.input_dir}/{self.relationship_table}.parquet")
         relationships = read_indexer_relationships(relationship_df)
+        print(f"Number of relationships: {len(relationships)}")
         return relationships
     def _read_community_reports(self):
         report_df = pd.read_parquet(f"{self.input_dir}/{self.community_report_table}.parquet")
         community_df = pd.read_parquet(f"{self.input_dir}/{self.community_table}.parquet")
         reports = read_indexer_reports(report_df, community_df, self.community_level)
+        print(f"Number of community reports: {len(reports)}")
         return reports
     def  _read_text_units(self):
         text_unit_df = pd.read_parquet(f"{self.input_dir}/{self.text_unit_table}.parquet")
         text_units = read_indexer_text_units(text_unit_df)
+        print(f"Number of text units: {len(text_units)}")
+        print(text_units)
         return text_units
     async def local_search(self, query):
         result = await self.search_engine.search(query)

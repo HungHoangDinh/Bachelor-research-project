@@ -30,7 +30,7 @@ def save_pdf_to_minio(file_data: bytes, filename: str):
         graphrag_filename=filename[:-4] + ".txt"
         file_path = folder_path / graphrag_filename
         file_path.write_text(content, encoding='utf-8')
-        answer=update()
+        answer=index()
         
         minio_client.put_object(
         bucket_name=bucket_name,
