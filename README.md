@@ -136,5 +136,7 @@ Trong đó:
 ## 5. Kết quả
 **Giao diện trang web**
 ![](wiki_image/ui_demo2.jpg)
+
 **Kết quả đánh giá**
+
 Chi tiết kết quả đánh giá xem tại: [Đánh giá](./evaluate/results/images/)
