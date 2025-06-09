@@ -1,5 +1,5 @@
 # Nghiên cứu cách kết hợp các kỹ thuật RAG và GraphRAG cho bài toán Chatbot trong Y tế 
-<!-- TOC -->
+
 - [Nghiên cứu cách kết hợp các kỹ thuật RAG và GraphRAG cho bài toán Chatbot trong Y tế](#nghiên-cứu-cách-kết-hợp-các-kỹ-thuật-rag-và-graphrag-cho-bài-toán-chatbot-trong-y-tế)
   - [1. Giới thiệu về đề tài](#1-giới-thiệu-về-đề-tài)
   - [2. Đề xuất cải tiến](#2-đề-xuất-cải-tiến)
@@ -9,7 +9,7 @@
   - [3. Triển khai hệ thống](#3-triển-khai-hệ-thống)
   - [4. Các bước thực thi ứng dụng](#4-các-bước-thực-thi-ứng-dụng)
   - [5. Kết quả](#5-kết-quả)
-<!-- /TOC -->
+
 
 
 ## 1. Giới thiệu về đề tài

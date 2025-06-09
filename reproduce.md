@@ -1,9 +1,16 @@
-# How to reproduce the project
+## Cách thiết lập và triển khai lại hệ thống
 
-## Table of Contents
-<!-- TOC --> 
+- [Cách thiết lập và triển khai lại hệ thống](#cách-thiết-lập-và-triển-khai-lại-hệ-thống)
+- [1. Backend](#1-backend)
+  - [1.1. Yêu cầu hệ thống](#11-yêu-cầu-hệ-thống)
+  - [1.2 Các bước triển khai](#12-các-bước-triển-khai)
+- [2. Frontend](#2-frontend)
+  - [2.1. Yêu cầu hệ thống](#21-yêu-cầu-hệ-thống)
+  - [2.2 Các bước triển khai](#22-các-bước-triển-khai)
+- [3. Evaluate](#3-evaluate)
+  - [3.1. Yêu cầu hệ thống](#31-yêu-cầu-hệ-thống)
+  - [3.2 Các bước triển khai](#32-các-bước-triển-khai)
 
-<!-- /TOC -->
 
 
 ## 1. Backend
