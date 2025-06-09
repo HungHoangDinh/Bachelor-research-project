@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import textwrap
 from constants.constants import MODES, FILE_NAMES,RAGAS_METRICS
 def visualize_lines_char(modes:list[str], datas:list[list[int]],metrics:str, image_name:str):
     """
@@ -35,9 +36,7 @@ def visualize_columns_char(total_datas: list, correct_datas: list, modes: list[s
         correct_datas (list): List of correct data values.
         modes (list[str]): List of modes to visualize.
     """
-    import matplotlib.pyplot as plt
-    import numpy as np
-    import textwrap
+
 
     num_bars = len(total_datas)
     spacing = 1.5
@@ -64,7 +63,7 @@ def visualize_columns_char(total_datas: list, correct_datas: list, modes: list[s
     plt.tight_layout()
     plt.savefig('results/images/total_correct_info.png', dpi=300)
 
-def visualize_RCMMS_03_07():
+def visualize_RCMMS_03_07(data):
     """
     Visualizes the columns for each mode with the given data.
 
@@ -73,10 +72,6 @@ def visualize_RCMMS_03_07():
         correct_datas (list): List of correct data values.
         modes (list[str]): List of modes to visualize.
     """
-    import matplotlib.pyplot as plt
-    import numpy as np
-    import textwrap
-    data=[0.61,0.68,0.91,0.81,0.61,0.55,0.83,0.77,0.32,0.38]
     num_bars = len(data)
     modes=["RAG","RAG Custom","Local Search","Local Search Custom","Global Search","Global Search Custom","DRIFT Search","DRIFT Search Custom","Google AI Studio","ChatGPT"]
     spacing = 1.5
@@ -99,7 +94,7 @@ def visualize_RCMMS_03_07():
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
     plt.savefig('results/images/RCMMS_03_07.jpg', dpi=300)
-def visualize_RCMMS_05_05():
+def visualize_RCMMS_05_05(data):
     """
     Visualizes the columns for each mode with the given data.
 
@@ -108,10 +103,7 @@ def visualize_RCMMS_05_05():
         correct_datas (list): List of correct data values.
         modes (list[str]): List of modes to visualize.
     """
-    import matplotlib.pyplot as plt
-    import numpy as np
-    import textwrap
-    data=[0.67,0.73,0.85,0.82,0.64,0.61,0.77,0.78,0.40,0.48]
+
     num_bars = len(data)
     modes=["RAG","RAG Custom","Local Search","Local Search Custom","Global Search","Global Search Custom","DRIFT Search","DRIFT Search Custom","Google AI Studio","ChatGPT"]
     spacing = 1.5
@@ -134,7 +126,7 @@ def visualize_RCMMS_05_05():
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.tight_layout()
     plt.savefig('results/images/RCMMS_05_05.jpg', dpi=300)
-def visualize_RCMMS_07_03():
+def visualize_RCMMS_07_03(data):
     """
     Visualizes the columns for each mode with the given data.
 
@@ -143,10 +135,6 @@ def visualize_RCMMS_07_03():
         correct_datas (list): List of correct data values.
         modes (list[str]): List of modes to visualize.
     """
-    import matplotlib.pyplot as plt
-    import numpy as np
-    import textwrap
-    data=[0.74,0.78,0.79,0.83,0.66,0.67,0.72,0.79,0.49,0.58]
     num_bars = len(data)
     modes=["RAG","RAG Custom","Local Search","Local Search Custom","Global Search","Global Search Custom","DRIFT Search","DRIFT Search Custom","Google AI Studio","ChatGPT"]
     spacing = 1.5
@@ -198,8 +186,7 @@ def visualize_ragas():
             modes= MODES[i*2:i*2+2]
             datas_subset = [datas[j] for j in range(i*2, i*2+2)]
             visualize_lines_char(modes, datas_subset, metrics, f"{metrics}_{files[0]}_{files[1]}")
-    print("Visualization completed and saved in results/images/")
-def visualize_no_rag():
+def visualize_RCS():
     
     file_name= "results/data_total_info.xlsx"
     df = pd.read_excel(file_name)
@@ -212,10 +199,33 @@ def visualize_no_rag():
     for mode in MODES:
         correct.append(df[mode].sum())
     visualize_columns_char(total, correct, MODES)
+def visualize_RCMMS():
+    """
+    Visualizes the RCMMS metrics for each mode and saves the images.
+    """
+    file_name = "results/data_total_info.xlsx"
+    df = pd.read_excel(file_name)
+    total = [df[mode].sum() for mode in MODES]
+
+    file_name = "results/data_correct_info.xlsx"
+    df = pd.read_excel(file_name)
+    correct = [df[mode].sum() for mode in MODES]
+
+    max_correct = max(correct)
+    precision = [round(correct[i] / total[i], 2) if total[i] != 0 else 0 for i in range(len(MODES))]
+    coverage = [round(correct[i] / max_correct, 2) if max_correct != 0 else 0 for i in range(len(MODES))]
+
+    score_03_07 = [round(0.3 * p + 0.7 * c, 2) for p, c in zip(precision, coverage)]
+    visualize_RCMMS_03_07(score_03_07)
+
+    score_05_05 = [round(0.5 * p + 0.5 * c, 2) for p, c in zip(precision, coverage)]
+    visualize_RCMMS_05_05(score_05_05)
+
+    score_07_03 = [round(0.7 * p + 0.3 * c, 2) for p, c in zip(precision, coverage)]
+    visualize_RCMMS_07_03(score_07_03)
+    print("Visualization completed and saved in results/images/RCMMS_*.jpg")
 if __name__ == "__main__":
     visualize_ragas()
-    visualize_no_rag()
-    visualize_RCMMS_03_07()
-    visualize_RCMMS_05_05()
-    visualize_RCMMS_07_03()
+    visualize_RCS()
+    visualize_RCMMS()
     print("Visualization completed and saved in results/images/")
