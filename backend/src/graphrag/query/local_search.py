@@ -92,12 +92,12 @@ class GraphragLocalSearch:
             "conversation_history_user_turns_only": True,
             "top_k_mapped_entities": 10,
             "top_k_relationships": 10,
-            "include_entity_rank": True,
+            "include_entity_rank": False,
             "include_relationship_weight": True,
             "include_community_rank": False,
             "return_candidate_context": False,
             "embedding_vectorstore_key": EntityVectorStoreKey.ID,  # set this to EntityVectorStoreKey.TITLE if the vectorstore uses entity title as ids
-            "max_tokens": 12_000,  # change this based on the token limit you have on your model (if you are using a model with 8k limit, a good setting could be 5000)
+            "max_tokens": 24_000,  # change this based on the token limit you have on your model (if you are using a model with 8k limit, a good setting could be 5000)
         }
         self.model_params = {
             "max_tokens": 8_000,  # change this based on the token limit you have on your model (if you are using a model with 8k limit, a good setting could be 1000=1500)
