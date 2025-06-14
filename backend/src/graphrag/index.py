@@ -1,11 +1,14 @@
 import subprocess
 import os
 import shutil
-from .constants.constants import INDEX_DIR
+from .constants.constants import INDEX_DIR,FILE_DIR
 def index():
     shutil.rmtree(INDEX_DIR+'cache', ignore_errors=True)
     shutil.rmtree(INDEX_DIR+'logs', ignore_errors=True)
     shutil.rmtree(INDEX_DIR+'output', ignore_errors=True)
+    # check file in directory
+    if not os.path.exists(INDEX_DIR) or not os.listdir(INDEX_DIR):
+        return True
     result = subprocess.run(
         ["graphrag", "index", "--root", INDEX_DIR],
        
