@@ -20,6 +20,8 @@ def index():
         print("Indexing failed.")
         return False
 def update():
+    if not os.path.exists(INDEX_DIR) or not os.listdir(INDEX_DIR):
+        return True
     result = subprocess.run(
         ["graphrag", "update", "--root", INDEX_DIR],
        
