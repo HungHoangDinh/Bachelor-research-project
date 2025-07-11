@@ -90,7 +90,7 @@ class GraphragLocalSearch:
             "community_prop": 0.1,
             "conversation_history_max_turns": 5,
             "conversation_history_user_turns_only": True,
-            "top_k_mapped_entities": 10,
+            "top_k_mapped_entities": 5,
             "top_k_relationships": 10,
             "include_entity_rank": False,
             "include_relationship_weight": True,

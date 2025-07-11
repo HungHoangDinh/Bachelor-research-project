@@ -1,0 +1,159 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="undirected">
+    <node id="SARS-COV-2" />
+    <node id="VIRUS CORONA" />
+    <node id="WUHAN" />
+    <node id="MERS" />
+    <node id="SARS" />
+    <node id="VI&#202;M &#272;&#431;&#7900;NG H&#212; H&#7844;P C&#7844;P" />
+    <node id="VIRUS V&#360; H&#193;N" />
+    <node id="TH&#193;NG 12 N&#258;M 2019" />
+    <node id="NHI&#7878;T &#272;&#7896; CAO" />
+    <node id="&#272;&#7896; &#7848;M CAO" />
+    <node id="HUBEI" />
+    <node id="WHO" />
+    <node id="VACCINE" />
+    <node id="INFLUENZA" />
+    <node id="COLD" />
+    <node id="HUMAN" />
+    <node id="BETA-CORONAVIRUS" />
+    <node id="SYMPTOMS" />
+    <node id="ENVIRONMENT" />
+    <node id="DISINFECTANTS" />
+    <node id="HOST" />
+    <node id="B&#7878;NH C&#218;M" />
+    <node id="B&#7878;NH VI&#202;M PH&#7892;I" />
+    <node id="V&#7854;C XIN" />
+    <node id="TR&#7866; EM" />
+    <node id="HO" />
+    <node id="S&#7888;T" />
+    <node id="KH&#211; TH&#7902;" />
+    <node id="TP.HCM" />
+    <node id="B&#7878;NH VI&#7878;N NHI&#7878;T &#272;&#7898;I" />
+    <node id="H&#192; N&#7896;I" />
+    <node id="VI&#7878;N PASTEUR" />
+    <node id="VI&#202;M PH&#7892;I V&#360; H&#193;N" />
+    <node id="VI&#7878;T NAM" />
+    <node id="TRUNG QU&#7888;C" />
+    <node id="C&#193;C TRI&#7878;U CH&#7912;NG" />
+    <node id="PH&#431;&#416;NG PH&#193;P &#272;I&#7872;U TR&#7882;" />
+    <node id="B&#7896; Y T&#7870;" />
+    <node id="HEN PH&#7870; QU&#7842;N" />
+    <node id="C&#193;C B&#7878;NH L&#221; N&#7872;N M&#195;N T&#205;NH" />
+    <node id="B&#7878;NH TIM" />
+    <node id="KH&#7848;U TRANG" />
+    <node id="KH&#7848;U TRANG Y T&#7870; 3 L&#7898;P" />
+    <node id="C&#416; QUAN" />
+    <node id="S&#7912;C &#272;&#7872; KH&#193;NG" />
+    <node id="LO &#194;U" />
+    <node id="PH&#210;NG NG&#7914;A" />
+    <node id="&#272;I&#7872;U TR&#7882;" />
+    <node id="TR&#431;&#416;NG KH&#7842; NH&#194;N" />
+    <node id="B&#7878;NH VI&#7878;N NHI &#272;&#7890;NG I" />
+    <node id="B&#7878;NH VI&#202;M &#272;&#431;&#7900;NG H&#212; H&#7844;P" />
+    <node id="X&#192; PH&#210;NG" />
+    <node id="N&#431;&#7898;C R&#7916;A TAY" />
+    <node id="14 NG&#192;Y" />
+    <node id="NG&#431;&#7900;I NHI&#7876;M" />
+    <node id="GA T&#192;U XE" />
+    <node id="M&#193;Y BAY" />
+    <node id="SI&#202;U TH&#7882;" />
+    <node id="CH&#217;A CHI&#7872;N" />
+    <node id="C&#193;C B&#7878;NH NHI&#7876;M KHU&#7848;N" />
+    <node id="TR&#7840;M Y T&#7870; C&#416; S&#7902;" />
+    <node id="SYMPTOM" />
+    <node id="C&#193;CH LY" />
+    <node id="T&#258;NG C&#431;&#7900;NG &#272;&#7872; KH&#193;NG" />
+    <node id="VIETNAM" />
+    <node id="B&#7878;NH VI&#7878;N CH&#7906; R&#7850;Y" />
+    <node id="PH&#193;C &#272;&#7890;" />
+    <node id="B&#7878;NH VI&#202;M PH&#7892;I C&#7844;P" />
+    <node id="KH&#193;CH T&#7914; TRUNG QU&#7888;C" />
+    <node id="HOTLINE B&#7896; Y T&#7870;" />
+    <node id="C&#218;M" />
+    <node id="TAY CH&#194;N MI&#7878;NG" />
+    <node id="H&#212; H&#7844;P" />
+    <node id="D&#7882; &#7912;NG" />
+    <node id="B&#7878;NH VI&#202;N &#272;A KHOA T&#194;M ANH" />
+    <edge source="SARS-COV-2" target="VIRUS CORONA" />
+    <edge source="SARS-COV-2" target="WUHAN" />
+    <edge source="SARS-COV-2" target="MERS" />
+    <edge source="SARS-COV-2" target="SARS" />
+    <edge source="SARS-COV-2" target="VI&#202;M &#272;&#431;&#7900;NG H&#212; H&#7844;P C&#7844;P" />
+    <edge source="SARS-COV-2" target="VIRUS V&#360; H&#193;N" />
+    <edge source="SARS-COV-2" target="TH&#193;NG 12 N&#258;M 2019" />
+    <edge source="SARS-COV-2" target="NHI&#7878;T &#272;&#7896; CAO" />
+    <edge source="SARS-COV-2" target="&#272;&#7896; &#7848;M CAO" />
+    <edge source="SARS-COV-2" target="WHO" />
+    <edge source="SARS-COV-2" target="VACCINE" />
+    <edge source="SARS-COV-2" target="INFLUENZA" />
+    <edge source="SARS-COV-2" target="COLD" />
+    <edge source="SARS-COV-2" target="HUMAN" />
+    <edge source="SARS-COV-2" target="BETA-CORONAVIRUS" />
+    <edge source="SARS-COV-2" target="SYMPTOMS" />
+    <edge source="SARS-COV-2" target="ENVIRONMENT" />
+    <edge source="SARS-COV-2" target="DISINFECTANTS" />
+    <edge source="SARS-COV-2" target="HOST" />
+    <edge source="SARS-COV-2" target="B&#7878;NH C&#218;M" />
+    <edge source="SARS-COV-2" target="B&#7878;NH VI&#202;M PH&#7892;I" />
+    <edge source="SARS-COV-2" target="V&#7854;C XIN" />
+    <edge source="SARS-COV-2" target="TR&#7866; EM" />
+    <edge source="SARS-COV-2" target="HO" />
+    <edge source="SARS-COV-2" target="S&#7888;T" />
+    <edge source="SARS-COV-2" target="KH&#211; TH&#7902;" />
+    <edge source="SARS-COV-2" target="VI&#202;M PH&#7892;I V&#360; H&#193;N" />
+    <edge source="SARS-COV-2" target="VI&#7878;T NAM" />
+    <edge source="SARS-COV-2" target="TRUNG QU&#7888;C" />
+    <edge source="SARS-COV-2" target="B&#7896; Y T&#7870;" />
+    <edge source="SARS-COV-2" target="KH&#7848;U TRANG" />
+    <edge source="SARS-COV-2" target="KH&#7848;U TRANG Y T&#7870; 3 L&#7898;P" />
+    <edge source="SARS-COV-2" target="PH&#210;NG NG&#7914;A" />
+    <edge source="SARS-COV-2" target="&#272;I&#7872;U TR&#7882;" />
+    <edge source="SARS-COV-2" target="X&#192; PH&#210;NG" />
+    <edge source="SARS-COV-2" target="N&#431;&#7898;C R&#7916;A TAY" />
+    <edge source="SARS-COV-2" target="14 NG&#192;Y" />
+    <edge source="SARS-COV-2" target="NG&#431;&#7900;I NHI&#7876;M" />
+    <edge source="SARS-COV-2" target="GA T&#192;U XE" />
+    <edge source="SARS-COV-2" target="M&#193;Y BAY" />
+    <edge source="SARS-COV-2" target="SI&#202;U TH&#7882;" />
+    <edge source="SARS-COV-2" target="CH&#217;A CHI&#7872;N" />
+    <edge source="SARS-COV-2" target="B&#7878;NH VI&#202;M PH&#7892;I C&#7844;P" />
+    <edge source="SARS-COV-2" target="KH&#193;CH T&#7914; TRUNG QU&#7888;C" />
+    <edge source="SARS-COV-2" target="HOTLINE B&#7896; Y T&#7870;" />
+    <edge source="SARS-COV-2" target="SYMPTOM" />
+    <edge source="SARS-COV-2" target="C&#218;M" />
+    <edge source="SARS-COV-2" target="TAY CH&#194;N MI&#7878;NG" />
+    <edge source="SARS-COV-2" target="H&#212; H&#7844;P" />
+    <edge source="SARS-COV-2" target="D&#7882; &#7912;NG" />
+    <edge source="VIRUS CORONA" target="B&#7896; Y T&#7870;" />
+    <edge source="VIRUS CORONA" target="KH&#7848;U TRANG" />
+    <edge source="VIRUS CORONA" target="KH&#7848;U TRANG Y T&#7870; 3 L&#7898;P" />
+    <edge source="VIRUS CORONA" target="C&#416; QUAN" />
+    <edge source="VIRUS CORONA" target="S&#7912;C &#272;&#7872; KH&#193;NG" />
+    <edge source="VIRUS CORONA" target="LO &#194;U" />
+    <edge source="VIRUS CORONA" target="B&#7878;NH VI&#202;M &#272;&#431;&#7900;NG H&#212; H&#7844;P" />
+    <edge source="VIRUS CORONA" target="TR&#7840;M Y T&#7870; C&#416; S&#7902;" />
+    <edge source="VIRUS CORONA" target="SYMPTOM" />
+    <edge source="VIRUS CORONA" target="C&#193;CH LY" />
+    <edge source="VIRUS CORONA" target="T&#258;NG C&#431;&#7900;NG &#272;&#7872; KH&#193;NG" />
+    <edge source="WUHAN" target="HUBEI" />
+    <edge source="MERS" target="VIETNAM" />
+    <edge source="SARS" target="VIETNAM" />
+    <edge source="VI&#202;M &#272;&#431;&#7900;NG H&#212; H&#7844;P C&#7844;P" target="C&#193;C TRI&#7878;U CH&#7912;NG" />
+    <edge source="VI&#202;M &#272;&#431;&#7900;NG H&#212; H&#7844;P C&#7844;P" target="PH&#431;&#416;NG PH&#193;P &#272;I&#7872;U TR&#7882;" />
+    <edge source="V&#7854;C XIN" target="B&#7878;NH VI&#202;N &#272;A KHOA T&#194;M ANH" />
+    <edge source="TP.HCM" target="B&#7878;NH VI&#7878;N NHI&#7878;T &#272;&#7898;I" />
+    <edge source="B&#7878;NH VI&#7878;N NHI&#7878;T &#272;&#7898;I" target="H&#192; N&#7896;I" />
+    <edge source="B&#7878;NH VI&#7878;N NHI&#7878;T &#272;&#7898;I" target="VI&#7878;N PASTEUR" />
+    <edge source="B&#7878;NH VI&#7878;N NHI&#7878;T &#272;&#7898;I" target="B&#7896; Y T&#7870;" />
+    <edge source="VI&#7878;T NAM" target="B&#7896; Y T&#7870;" />
+    <edge source="TRUNG QU&#7888;C" target="KH&#193;CH T&#7914; TRUNG QU&#7888;C" />
+    <edge source="B&#7896; Y T&#7870;" target="VIETNAM" />
+    <edge source="B&#7896; Y T&#7870;" target="B&#7878;NH VI&#7878;N CH&#7906; R&#7850;Y" />
+    <edge source="B&#7896; Y T&#7870;" target="PH&#193;C &#272;&#7890;" />
+    <edge source="HEN PH&#7870; QU&#7842;N" target="C&#193;C B&#7878;NH L&#221; N&#7872;N M&#195;N T&#205;NH" />
+    <edge source="C&#193;C B&#7878;NH L&#221; N&#7872;N M&#195;N T&#205;NH" target="B&#7878;NH TIM" />
+    <edge source="TR&#431;&#416;NG KH&#7842; NH&#194;N" target="B&#7878;NH VI&#7878;N NHI &#272;&#7890;NG I" />
+    <edge source="X&#192; PH&#210;NG" target="C&#193;C B&#7878;NH NHI&#7876;M KHU&#7848;N" />
+  </graph>
+</graphml>

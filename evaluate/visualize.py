@@ -226,6 +226,6 @@ def visualize_RCMMS():
     print("Visualization completed and saved in results/images/RCMMS_*.jpg")
 if __name__ == "__main__":
     visualize_ragas()
-    visualize_RCS()
-    visualize_RCMMS()
+    # visualize_RCS()
+    # visualize_RCMMS()
     print("Visualization completed and saved in results/images/")

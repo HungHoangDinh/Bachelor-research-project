@@ -1,0 +1,80 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="undirected">
+    <node id="SARCOIDOSIS" />
+    <node id="LUNG" />
+    <node id="BRONCHUS" />
+    <node id="SCARRING" />
+    <node id="PULMONARY FIBROSIS" />
+    <node id="IMMUNE SYSTEM" />
+    <node id="DIAGNOSTIC IMAGING" />
+    <node id="EYES" />
+    <node id="SKIN" />
+    <node id="HEART" />
+    <node id="NERVES" />
+    <node id="LIVER" />
+    <node id="KIDNEYS" />
+    <node id="RACE" />
+    <node id="ACUTE SYMPTOMS" />
+    <node id="CHRONIC SYMPTOMS" />
+    <node id="LUNGS" />
+    <node id="NG&#212; QUY CH&#194;U" />
+    <node id="SYMPTOMS" />
+    <node id="TREATMENT" />
+    <node id="H&#7840;CH TR&#202;N PH&#7892;I" />
+    <node id="BI&#7870;N CH&#7912;NG" />
+    <node id="PH&#431;&#416;NG PH&#193;P CH&#7848;N &#272;O&#193;N" />
+    <node id="THU&#7888;C" />
+    <node id="VITAMIN D" />
+    <node id="H&#7890; H&#7844;P" />
+    <node id="PH&#7850;U THU&#7852;T" />
+    <node id="H&#7890;I S&#7912;C T&#205;CH C&#7920;C" />
+    <node id="C&#416; X&#431;&#416;NG KH&#7898;P" />
+    <node id="CANXI" />
+    <node id="TI&#202;M PH&#210;NG V&#7854;C XIN LAO" />
+    <node id="TH&#7874; TR&#7840;NG" />
+    <node id="S&#7912;C KH&#7886;E" />
+    <node id="LO &#194;U" />
+    <node id="C&#7842;M X&#218;C" />
+    <node id="GS.TS.BS NG&#212; QU&#221; CH&#194;U" />
+    <node id="BV&#272;K T&#194;M ANH" />
+    <node id="C&#193;C KHOA L&#194;M S&#192;NG" />
+    <node id="C&#193;C KHOA C&#7852;N L&#194;M S&#192;NG" />
+    <edge source="SARCOIDOSIS" target="LUNG" />
+    <edge source="SARCOIDOSIS" target="BRONCHUS" />
+    <edge source="SARCOIDOSIS" target="SCARRING" />
+    <edge source="SARCOIDOSIS" target="PULMONARY FIBROSIS" />
+    <edge source="SARCOIDOSIS" target="IMMUNE SYSTEM" />
+    <edge source="SARCOIDOSIS" target="DIAGNOSTIC IMAGING" />
+    <edge source="SARCOIDOSIS" target="EYES" />
+    <edge source="SARCOIDOSIS" target="SKIN" />
+    <edge source="SARCOIDOSIS" target="HEART" />
+    <edge source="SARCOIDOSIS" target="NERVES" />
+    <edge source="SARCOIDOSIS" target="LIVER" />
+    <edge source="SARCOIDOSIS" target="KIDNEYS" />
+    <edge source="SARCOIDOSIS" target="RACE" />
+    <edge source="SARCOIDOSIS" target="ACUTE SYMPTOMS" />
+    <edge source="SARCOIDOSIS" target="CHRONIC SYMPTOMS" />
+    <edge source="SARCOIDOSIS" target="LUNGS" />
+    <edge source="SARCOIDOSIS" target="NG&#212; QUY CH&#194;U" />
+    <edge source="SARCOIDOSIS" target="SYMPTOMS" />
+    <edge source="SARCOIDOSIS" target="TREATMENT" />
+    <edge source="SARCOIDOSIS" target="H&#7840;CH TR&#202;N PH&#7892;I" />
+    <edge source="SARCOIDOSIS" target="BI&#7870;N CH&#7912;NG" />
+    <edge source="SARCOIDOSIS" target="PH&#431;&#416;NG PH&#193;P CH&#7848;N &#272;O&#193;N" />
+    <edge source="SARCOIDOSIS" target="VITAMIN D" />
+    <edge source="SARCOIDOSIS" target="H&#7890; H&#7844;P" />
+    <edge source="SARCOIDOSIS" target="PH&#7850;U THU&#7852;T" />
+    <edge source="SARCOIDOSIS" target="H&#7890;I S&#7912;C T&#205;CH C&#7920;C" />
+    <edge source="SARCOIDOSIS" target="C&#416; X&#431;&#416;NG KH&#7898;P" />
+    <edge source="SARCOIDOSIS" target="CANXI" />
+    <edge source="SARCOIDOSIS" target="TI&#202;M PH&#210;NG V&#7854;C XIN LAO" />
+    <edge source="SARCOIDOSIS" target="TH&#7874; TR&#7840;NG" />
+    <edge source="SARCOIDOSIS" target="S&#7912;C KH&#7886;E" />
+    <edge source="SARCOIDOSIS" target="LO &#194;U" />
+    <edge source="SARCOIDOSIS" target="C&#7842;M X&#218;C" />
+    <edge source="TREATMENT" target="THU&#7888;C" />
+    <edge source="GS.TS.BS NG&#212; QU&#221; CH&#194;U" target="BV&#272;K T&#194;M ANH" />
+    <edge source="BV&#272;K T&#194;M ANH" target="C&#193;C KHOA L&#194;M S&#192;NG" />
+    <edge source="BV&#272;K T&#194;M ANH" target="C&#193;C KHOA C&#7852;N L&#194;M S&#192;NG" />
+  </graph>
+</graphml>

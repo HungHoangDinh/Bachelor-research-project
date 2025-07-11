@@ -1,0 +1,71 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph edgedefault="undirected">
+    <node id="SARCOIDOSIS" />
+    <node id="LUNG" />
+    <node id="PULMONARY FIBROSIS" />
+    <node id="AMERICAN POPULATION" />
+    <node id="ACUTE SYMPTOMS" />
+    <node id="CHRONIC SARCOIDOSIS" />
+    <node id="EYE" />
+    <node id="SKIN" />
+    <node id="HEART" />
+    <node id="LIVER" />
+    <node id="KIDNEY" />
+    <node id="NERVOUS SYSTEM" />
+    <node id="BRONCHUS" />
+    <node id="NG&#212; QUY CH&#194;U" />
+    <node id="PH&#7892;I" />
+    <node id="X&#201;T NGHI&#7878;M" />
+    <node id="THU&#7888;C" />
+    <node id="BI&#7870;N CH&#7912;NG" />
+    <node id="C&#416; QUAN" />
+    <node id="CH&#7848;N &#272;O&#193;N" />
+    <node id="PH&#210;NG B&#7878;NH" />
+    <node id="CH&#7870; &#272;&#7896; &#258;N" />
+    <node id="VITAMIN D" />
+    <node id="BVDK T&#194;M ANH" />
+    <node id="CANXI" />
+    <node id="THU&#7888;C T&#7916; T&#431;" />
+    <node id="H&#212; H&#7844;P" />
+    <node id="ANXIETY" />
+    <node id="FATIGUE" />
+    <node id="VACCINE" />
+    <node id="TREATMENT" />
+    <node id="GS.TS.BS NG&#212; QU&#221; CH&#194;U" />
+    <node id="C&#193;C KHOA L&#194;M S&#192;NG" />
+    <node id="C&#193;C KHOA C&#7852;N L&#194;M S&#192;NG" />
+    <edge source="SARCOIDOSIS" target="LUNG" />
+    <edge source="SARCOIDOSIS" target="PULMONARY FIBROSIS" />
+    <edge source="SARCOIDOSIS" target="AMERICAN POPULATION" />
+    <edge source="SARCOIDOSIS" target="ACUTE SYMPTOMS" />
+    <edge source="SARCOIDOSIS" target="CHRONIC SARCOIDOSIS" />
+    <edge source="SARCOIDOSIS" target="EYE" />
+    <edge source="SARCOIDOSIS" target="SKIN" />
+    <edge source="SARCOIDOSIS" target="HEART" />
+    <edge source="SARCOIDOSIS" target="LIVER" />
+    <edge source="SARCOIDOSIS" target="KIDNEY" />
+    <edge source="SARCOIDOSIS" target="NERVOUS SYSTEM" />
+    <edge source="SARCOIDOSIS" target="NG&#212; QUY CH&#194;U" />
+    <edge source="SARCOIDOSIS" target="PH&#7892;I" />
+    <edge source="SARCOIDOSIS" target="X&#201;T NGHI&#7878;M" />
+    <edge source="SARCOIDOSIS" target="THU&#7888;C" />
+    <edge source="SARCOIDOSIS" target="BI&#7870;N CH&#7912;NG" />
+    <edge source="SARCOIDOSIS" target="C&#416; QUAN" />
+    <edge source="SARCOIDOSIS" target="CH&#7848;N &#272;O&#193;N" />
+    <edge source="SARCOIDOSIS" target="PH&#210;NG B&#7878;NH" />
+    <edge source="SARCOIDOSIS" target="CH&#7870; &#272;&#7896; &#258;N" />
+    <edge source="SARCOIDOSIS" target="VITAMIN D" />
+    <edge source="SARCOIDOSIS" target="BVDK T&#194;M ANH" />
+    <edge source="SARCOIDOSIS" target="CANXI" />
+    <edge source="SARCOIDOSIS" target="THU&#7888;C T&#7916; T&#431;" />
+    <edge source="SARCOIDOSIS" target="H&#212; H&#7844;P" />
+    <edge source="SARCOIDOSIS" target="ANXIETY" />
+    <edge source="SARCOIDOSIS" target="FATIGUE" />
+    <edge source="SARCOIDOSIS" target="VACCINE" />
+    <edge source="SARCOIDOSIS" target="TREATMENT" />
+    <edge source="LUNG" target="BRONCHUS" />
+    <edge source="BVDK T&#194;M ANH" target="GS.TS.BS NG&#212; QU&#221; CH&#194;U" />
+    <edge source="BVDK T&#194;M ANH" target="C&#193;C KHOA L&#194;M S&#192;NG" />
+    <edge source="BVDK T&#194;M ANH" target="C&#193;C KHOA C&#7852;N L&#194;M S&#192;NG" />
+  </graph>
+</graphml>
